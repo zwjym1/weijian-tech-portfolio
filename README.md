@@ -14,6 +14,11 @@
 | 工程 | Git、YAML 配置驱动、本地 GPU 渲染（RTX 3080） |
 | 其他学习 | Java / 数据结构与算法、操作系统、FISCO BCOS 区块链 + DID 数字身份（能源数据，竞赛方向） |
 
+## 已发布作品
+抖音「秘书丞」已发布 5 部 AI 程序化动画科普视频（Roadster 单条 24h 播放 1.3 万+），封面与数据见 **[showcase/](showcase)**。
+
+<img src="showcase/optogenetics.jpg" width="150"> <img src="showcase/blackhole527.jpg" width="150"> <img src="showcase/roadster.jpg" width="150"> <img src="showcase/iphone-fake.jpg" width="150">
+
 ## 项目
 | # | 项目 | 说明 | 技术 |
 |---|---|---|---|
