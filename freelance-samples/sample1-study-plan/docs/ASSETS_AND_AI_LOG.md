@@ -7,7 +7,9 @@ Checked 2026-11-02 (UTC+8). No stock footage, no music, no third-party images, n
 | Font: Inter | Rasmus Andersson, system-installed | SIL OFL 1.1 | Yes | — |
 | Voice-over | Kokoro-82M TTS model (hexgrad), voice `af_heart`, run locally via `kokoro-onnx` 0.6.1 (thewh1teagle, MIT) | Model weights Apache-2.0 | Yes (Apache-2.0) | 2026-11-02 |
 | Render framework | Remotion 4.0.538 | Remotion License: free for individuals | Yes for an individual | — |
-| Motion principles | claude-motion-design (howseen-ai, MIT) — design rules only (fast-first settles, no frozen frames, faster exits); no code copied | MIT | Yes | 2026-11-02 |
+| Motion utilities | lemo-opuscar core/lib.js (LemoLab), vendored at `remotion/src/vendor/lemo-lib.js` | MIT | Yes (keep notice) | 2026-11-02 |
+| Shader noise + light-leak transition | hyperframes shader-transitions (HeyGen), adapted in `remotion/src/fx.tsx` | Apache-2.0 | Yes (keep LICENSE, note changes) | 2026-11-02 |
+| Motion principles | claude-motion-design (Howseen AI) — rules only | MIT | Yes | 2026-11-02 |
 
 ## AI usage
 | Use | Tool | What it did | Human check |

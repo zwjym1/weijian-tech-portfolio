@@ -1,6 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, Audio, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing} from 'remotion';
 import tl from './timeline.json';
+import {ShaderBg, LightLeak, Burst, Pulse, DrawCheck, lemo} from './fx';
 // Motion principles adapted from claude-motion-design (MIT): fast-first settles, no frozen frames, exits faster than entries.
 const FPS = 30; const L = tl.lines; const f = (i: number) => Math.round(L[i].start * FPS);
 const C = {bg1:'#F4F1EA', bg2:'#E8EEF7', ink:'#1E2433', sub:'#5B6477', blue:'#3B6FF5', green:'#1FA97A', amber:'#F2A93B', coral:'#EF6A5B', violet:'#7B61FF', card:'#FFFFFF'};
@@ -28,10 +29,12 @@ const Icon = ({name, size = 56, color = C.ink}: {name: string; size?: number; co
 };
 
 // ---------- background: soft drifting shapes (never frozen) ----------
+const TINTS: Record<string,[number,number,number]> = {hook:[.94,.42,.36], intro:[.23,.44,.96], breakdown:[.23,.44,.96], calendar:[.95,.66,.23], review:[.12,.66,.48], recap:[.48,.38,1]};
+const curScene = (fr: number) => { let k = 0; SCENES.forEach((id, i) => { if (fr >= sceneStart(id)) k = i; }); return SCENES[k]; };
 const Bg = () => { const fr = useCurrentFrame(); const t = fr / FPS;
   const blob = (x: number, y: number, r: number, col: string, sp: number) => <div style={{position:'absolute', left: x + Math.sin(t*sp)*40, top: y + Math.cos(t*sp*0.8)*30, width:r, height:r, borderRadius:'50%', background:col, filter:'blur(80px)', opacity:0.55}}/>;
-  return <AbsoluteFill style={{background:`linear-gradient(135deg, ${C.bg1}, ${C.bg2})`}}>
-    {blob(-120,-160,620,'#FFD9A8',0.25)}{blob(1350,520,700,'#C9D8FF',0.2)}{blob(700,780,520,'#C8F0DF',0.3)}
+  return <AbsoluteFill style={{background:C.bg1}}>
+    <ShaderBg tint={TINTS[curScene(fr)]}/>
     <AbsoluteFill style={{backgroundImage:'radial-gradient(#1E243314 1.5px, transparent 1.5px)', backgroundSize:'36px 36px', transform:`translateY(${(t*6)%36}px)`}}/>
   </AbsoluteFill>; };
 
@@ -44,11 +47,13 @@ const StepTag = ({n, label, color, at}: {n: number; label: string; color: string
     <div style={{fontSize:40, fontWeight:800, color:C.ink, letterSpacing:-0.5}}>{label}</div></div>; };
 
 // scene wrapper: enter moving, exit faster, micro-drift while held
-const Scene: React.FC<{id: string; children: React.ReactNode}> = ({id, children}) => { const fr = useCurrentFrame();
+const Scene: React.FC<{id: string; children: React.ReactNode}> = ({id, children}) => { const fr = useCurrentFrame(); const {fps} = useVideoConfig();
   const a = sceneStart(id), b = sceneEnd(id); if (fr < a - 2 || fr > b + 2) return null;
-  const inP = io(fr, a, a + 18), outP = io(fr, b - 12, b);
-  const drift = interpolate(fr, [a, b], [0, -14]);
-  return <AbsoluteFill style={{opacity: inP * (1 - outP), transform:`translateY(${(1-inP)*50 - outP*60 + drift}px) scale(${1 - outP*0.03})`}}>{children}</AbsoluteFill>; };
+  const inP = spring({frame: fr - a, fps, config:{damping:20, stiffness:120, mass:0.8}}); const outP = Math.pow(io(fr, b - 10, b), 1.5);
+  const t = (fr - a) / FPS; const dx = (lemo.vnoise(t*0.35) - 0.5) * 18, dy = (lemo.vnoise(t*0.3 + 9) - 0.5) * 12; // camera micro-drift (lemo vnoise)
+  const push = interpolate(fr, [a, b], [1, 1.035]);
+  const x = (1 - inP) * 220 - outP * 320; const blur = (1 - inP) * 10 + outP * 18;
+  return <AbsoluteFill style={{opacity: Math.min(1, inP*1.4) * (1 - outP), filter: blur > 0.3 ? `blur(${blur}px)` : undefined, transform:`translate(${x + dx}px, ${dy}px) scale(${push})`}}>{children}</AbsoluteFill>; };
 
 // ---------- Scene 1: hook ----------
 const tasks = [{icon:'doc', t:'Essay', d:'Due next Monday', c:C.blue}, {icon:'book', t:'Read 2 chapters', d:'Chapters 4–5', c:C.green}, {icon:'quiz', t:'Quiz', d:'Friday', c:C.coral}];
@@ -67,7 +72,7 @@ const Hook = () => { const fr = useCurrentFrame();
         </Card>; })}
     </div>
     <div style={{position:'absolute', top:640, width:'100%', textAlign:'center', fontSize:64, fontWeight:800, color:C.ink, opacity:io(fr, f(3), f(3)+14), transform:`translateY(${io(fr,f(3),f(3)+14,30,0)}px)`}}>
-      Where do you start<span style={{color:C.blue}}>?</span></div>
+      Where do you start<span style={{color:C.blue, display:'inline-block', transform:`translateY(${-Math.abs(Math.sin((fr - f(3))/7))*14*(1-lemo.seg(fr, f(3), f(3)+70))}px) rotate(${Math.sin(fr/9)*6}deg)`}}>?</span></div>
   </Scene>; };
 
 // ---------- Scene 2: intro ----------
@@ -76,13 +81,15 @@ const Intro = () => { const fr = useCurrentFrame(); const ts = useS(f(4));
   return <Scene id="intro">
     <div style={{position:'absolute', top:130, width:'100%', textAlign:'center', opacity:ts, transform:`translateY(${(1-ts)*40}px)`}}>
       <div style={{fontSize:30, letterSpacing:6, color:C.sub, fontWeight:700}}>A SIMPLE METHOD</div>
-      <div style={{fontSize:86, fontWeight:900, color:C.ink, letterSpacing:-2, marginTop:10}}>How to Build a Simple Study Plan</div></div>
+      <div style={{fontSize:86, fontWeight:900, color:C.ink, letterSpacing:-2, marginTop:10, display:'flex', justifyContent:'center', gap:22}}>{'How to Build a Simple Study Plan'.split(' ').map((w, i) => { const k = spring({frame: fr - f(4) - 4 - i*3, fps: FPS, config:{damping:14, stiffness:170, mass:0.6}});
+        return <span key={i} style={{display:'inline-block', opacity:Math.min(1,k*1.5), transform:`translateY(${(1-k)*60}px) rotate(${(1-k)*8}deg)`, color: i >= 5 ? C.blue : C.ink}}>{w}</span>; })}</div>
+      <div style={{margin:'18px auto 0', height:8, borderRadius:4, background:`linear-gradient(90deg, ${C.blue}, ${C.violet})`, width: 520*lemo.eo(lemo.seg(fr, f(4)+20, f(4)+45))}}/></div>
     <div style={{position:'absolute', top:420, width:'100%', display:'flex', justifyContent:'center', gap:60}}>
       {steps3.map((k, i) => { const s = useS(f(5) + 14 + i*22);
         return <Card key={i} style={{width:400, padding:'44px 30px', textAlign:'center', opacity:s, transform:`translateY(${(1-s)*90}px)`}}>
           <div style={{width:120, height:120, margin:'0 auto', borderRadius:36, background:k.c, display:'grid', placeItems:'center', transform:`rotate(${Math.sin(fr/40+i)*3}deg)`}}><Icon name={k.icon} size={70} color="#fff"/></div>
           <div style={{fontSize:28, color:C.sub, marginTop:26, fontWeight:700}}>STEP {k.n}</div>
-          <div style={{fontSize:46, fontWeight:800, color:C.ink, marginTop:6}}>{k.t}</div></Card>; })}
+          <div style={{fontSize:46, fontWeight:800, color:C.ink, marginTop:6}}>{k.t}</div><Pulse x={200} y={104} at={f(5)+14+i*22} color={k.c} size={220}/></Card>; })}
     </div>
     <div style={{position:'absolute', top:800, width:'100%', textAlign:'center', fontSize:32, color:C.sub, opacity:io(fr, f(7), f(7)+12)}}>
       Tools: a notebook or any calendar app</div>
@@ -91,8 +98,9 @@ const Intro = () => { const fr = useCurrentFrame(); const ts = useS(f(4));
 // ---------- checklist row ----------
 const Row = ({text, at, time, timeAt, done, color = C.blue, w = 640}: {text: string; at: number; time?: string; timeAt?: number; done?: number; color?: string; w?: number}) => {
   const fr = useCurrentFrame(); const s = useS(at); const d = done ? io(fr, done, done + 10) : 0;
-  return <div style={{display:'flex', alignItems:'center', gap:20, width:w, padding:'14px 22px', marginBottom:12, background:'#fff', borderRadius:16, boxShadow:'0 6px 16px rgba(30,36,51,0.08)', opacity:s, transform:`translateX(${(1-s)*-50}px)`}}>
-    <div style={{width:38, height:38, borderRadius:10, border:`3.5px solid ${color}`, background: d > 0 ? color : 'transparent', display:'grid', placeItems:'center'}}>{d > 0 && <div style={{transform:`scale(${d})`}}><Icon name="check" size={28} color="#fff"/></div>}</div>
+  return <div style={{display:'flex', alignItems:'center', gap:20, width:w, padding:'14px 22px', marginBottom:12, background:'#fff', borderRadius:16, boxShadow:'0 6px 16px rgba(30,36,51,0.08)', opacity:s, transform:`translateX(${(1-s)*-50}px)`, position:'relative', overflow:'hidden'}}>
+    <div style={{position:'absolute', inset:0, background:`linear-gradient(100deg, transparent 30%, ${color}22 50%, transparent 70%)`, transform:`translateX(${interpolate(fr, [at, at+22], [-110, 110], {extrapolateLeft:'clamp', extrapolateRight:'clamp'})}%)`}}/>
+    <div style={{position:'relative', width:38, height:38, borderRadius:10, border:`3.5px solid ${color}`, background: d > 0 ? color : 'transparent', display:'grid', placeItems:'center', transform:`scale(${1 + Math.sin(d*Math.PI)*0.25})`}}><DrawCheck p={d*1.3} size={28}/>{done ? <Burst x={19} y={19} at={done} colors={[color, C.amber, C.violet]} n={10} r={50}/> : null}</div>
     <div style={{fontSize:32, fontWeight:600, color:C.ink, flex:1, textDecoration: d > 0.5 ? 'line-through' : 'none', opacity: 1 - d*0.35}}>{text}</div>
     {time && <div style={{fontSize:26, fontWeight:700, color:C.sub, padding:'4px 12px', borderRadius:10, background:'#EEF1F6', opacity: io(fr, timeAt!, timeAt! + 10)}}>{time}</div>}
   </div>; };
@@ -137,7 +145,7 @@ const Breakdown = () => { const fr = useCurrentFrame();
     {/* counter */}
     {(() => { const s = useS(f(21)); const n = Math.round(interpolate(fr, [f(21), f(21)+30], [3, 10], {extrapolateLeft:'clamp', extrapolateRight:'clamp'}));
       return <div style={{position:'absolute', right:110, top:70, opacity:s, transform:`scale(${0.8+0.2*s})`}}><Card style={{padding:'18px 30px', fontSize:38, fontWeight:800, color:C.ink}}>
-        <span style={{color:C.coral, textDecoration:'line-through'}}>3 big tasks</span> → <span style={{color:C.green}}>{n} small steps</span></Card></div>; })()}
+        <span style={{color:C.coral, textDecoration:'line-through'}}>3 big tasks</span> → <span style={{color:C.green, display:'inline-block', transform:`scale(${1 + 0.15*Math.sin(lemo.seg(fr, f(21), f(21)+30)*Math.PI*7)*(1-lemo.seg(fr, f(21), f(21)+30))})`}}>{n} small steps</span></Card><Burst x={380} y={40} at={f(21)+30} colors={[C.green, C.amber, C.blue, C.violet]} n={22} r={160} seed={7}/></div>; })()}
   </Scene>; };
 
 // ---------- Calendar ----------
@@ -167,7 +175,15 @@ const Calendar = ({mode}: {mode: 'plan'|'review'}) => { const fr = useCurrentFra
     {DAYS.map((_, d) => Array.from({length: rows(d)}).map((__, r) => <div key={`a${d}${r}`} style={{position:'absolute', left:CX + d*CW + 10, top:CY + 10 + r*RH, width:CW-36, height:RH-14, borderRadius:14, border:`2.5px dashed ${C.sub}66`, opacity:avail(d), transform:`scale(${0.9 + 0.1*avail(d)})`}}/>))}
     {isPlan && <div style={{position:'absolute', left:CX, top:CY + RH*3 + 40, width:1600, fontSize:28, color:C.sub, opacity:io(fr, availAt+40, availAt+55)}}>Example only: ~1 hour on weekday evenings (two 30-min blocks), a longer block on Saturday.</div>}
     {/* quiz marker */}
-    <div style={{position:'absolute', left:CX + 4*CW + 10, top:CY + 90, width:CW-36, height:140, borderRadius:18, background:C.coral, color:'#fff', display:'grid', placeItems:'center', fontSize:36, fontWeight:800, opacity: isPlan ? io(fr, f(29)-15, f(29)) : 1}}><div style={{textAlign:'center'}}><Icon name="quiz" size={52} color="#fff"/><div>Quiz</div></div></div>
+    <div style={{position:'absolute', left:CX + 4*CW + 10, top:CY + 90, width:CW-36, height:140, borderRadius:18, background:C.coral, color:'#fff', display:'grid', placeItems:'center', fontSize:36, fontWeight:800, opacity: isPlan ? io(fr, f(29)-15, f(29)) : 1, transform:`scale(${isPlan ? lemo.back(lemo.seg(fr, f(29)-15, f(29))) : 1})`}}><div style={{textAlign:'center'}}><Icon name="quiz" size={52} color="#fff"/><div>Quiz</div></div></div>
+    {isPlan && (() => { const mins = [50,60,50,60,0,90,0]; const show = io(fr, placeEssay + 40, placeEssay + 60);
+      return <div style={{position:'absolute', left:CX, top:CY + RH*3 + 100, opacity:show}}>
+        <div style={{fontSize:24, fontWeight:700, color:C.sub, marginBottom:8, width:800}}>Planned minutes per day (example)</div>
+        {mins.map((m, d) => { const k = lemo.eo(lemo.seg(fr, placeEssay + 45 + d*4, placeEssay + 70 + d*4));
+          return <div key={d} style={{position:'absolute', left: d*CW, top:36, width:CW-16, height:70, display:'flex', alignItems:'flex-end', gap:10}}>
+            <div style={{width: (CW-90) * (m/90) * k, height:22, borderRadius:11, background: d===5 ? C.amber : m ? C.blue : '#D5DAE3'}}/>
+            <div style={{fontSize:22, fontWeight:800, color:C.ink}}>{m ? Math.round(m*k) : '—'}</div></div>; })}
+      </div>; })()}
     {/* rest marker */}
     <div style={{position:'absolute', left:CX + 6*CW + 10, top:CY + 140, width:CW-36, textAlign:'center', fontSize:28, color:C.sub, opacity:avail(6)}}>Rest</div>
     {SLOTS.map((s, i) => { const at = slotAt(s, i); const p = isPlan ? spring({frame: fr - at, fps: FPS, config:{damping:16, stiffness:150, mass:0.7}}) : 1;
@@ -178,7 +194,9 @@ const Calendar = ({mode}: {mode: 'plan'|'review'}) => { const fr = useCurrentFra
       const checked = io(fr, checkDay(s.d), checkDay(s.d) + 8) * (isOutline ? 0 : 1) * (s.d <= 3 ? 1 : 0);
       return <div key={i} style={{position:'absolute', left, top, width:CW-36, height:RH-14, borderRadius:14, background: s.kind==='free' ? '#FFF6E6' : s.c, border: s.kind==='free' ? `3px dashed ${C.amber}` : 'none', color: s.kind==='free' ? C.amber : '#fff', padding:'12px 14px', boxSizing:'border-box', fontSize:26, fontWeight:800, opacity:p, transform:`translateY(${(1-p)*-120}px) scale(${0.85+0.15*p})`, boxShadow: s.kind==='free' ? 'none' : '0 8px 18px rgba(30,36,51,0.18)', zIndex: isOutline ? 5 : 1, outline: isOutline && wedLate>0 && moveP<1 ? `${4*wedLate}px solid ${C.coral}` : 'none'}}>
         {s.label}
-        {checked > 0 && <div style={{position:'absolute', right:10, bottom:10, width:36, height:36, borderRadius:18, background:'#fff', display:'grid', placeItems:'center', transform:`scale(${checked})`}}><Icon name="check" size={26} color={s.c}/></div>}
+        {checked > 0 && <div style={{position:'absolute', right:10, bottom:10, width:36, height:36, borderRadius:18, background:'#fff', display:'grid', placeItems:'center', transform:`scale(${lemo.back(checked)})`}}><DrawCheck p={checked*1.4} size={26} color={s.c}/></div>}
+        {isPlan && <Burst x={(CW-36)/2} y={RH-14} at={at+6} colors={[s.c, '#fff', C.amber]} n={8} r={70} seed={i+3}/>}
+        {mode==='review' && s.d<=3 && !isOutline && <Burst x={CW-54} y={RH-32} at={checkDay(s.d)} colors={[s.c, C.amber]} n={8} r={50} seed={i+11}/>}
         {isOutline && wedLate > 0 && moveP < 0.05 && <div style={{position:'absolute', left:0, top:-40, fontSize:24, color:C.coral, whiteSpace:'nowrap'}}>Took longer</div>}
       </div>; })}
   </div>; };
@@ -234,7 +252,9 @@ const Progress = () => { const fr = useCurrentFrame(); const k = SCENES.findInde
   if (k < 2 || k > 4) return null; return <div style={{position:'absolute', right:110, bottom:200, display:'flex', gap:10}}>{[2,3,4].map(i => <div key={i} style={{width: i===k ? 46 : 14, height:14, borderRadius:7, background: i===k ? [C.blue,C.amber,C.green][i-2] : '#C5CBD6'}}/>)}</div>; };
 
 export const StudyPlan = () => <AbsoluteFill style={{fontFamily:FONT}}>
-  <Bg/><Hook/><Intro/><Breakdown/><CalendarScene/><ReviewScene/><Recap/><Progress/><Captions/>
+  <Bg/><Hook/><Intro/><Breakdown/><CalendarScene/><ReviewScene/><Recap/>
+  {SCENES.slice(1).map(id => <LightLeak key={id} at={sceneStart(id) - 9} dur={18} tint={TINTS[id]}/>)}
+  <Progress/><Captions/>
   <Audio src={staticFile('vo.wav')}/>
 </AbsoluteFill>;
 
