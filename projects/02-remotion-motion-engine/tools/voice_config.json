@@ -1,0 +1,1 @@
+{"engine":"fish","model":"s2.1-pro-free","voice_id":"f6f02c2a16ef4646b24322f188dc2ad9","note":"key 只从环境变量 FISH_API_KEY 读取，不写入文件"}

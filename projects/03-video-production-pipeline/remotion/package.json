@@ -1,0 +1,28 @@
+{
+  "name": "archive-studio-remotion",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "compositions": "remotion compositions src/index.tsx",
+    "still": "remotion still src/index.tsx"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.8.2",
+    "@remotion/cli": "4.0.536",
+    "@remotion/three": "4.0.536",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.536",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.186.0",
+    "typescript": "7.0.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "esbuild@0.28.2": true
+  }
+}

@@ -1,0 +1,19 @@
+# 阶段流水线（v0.2，2026-10-22 用户批全案推荐）。闸口只有 4 个（W3）。
+id_format: "ARC-YYYYMMDD-NN"
+stages:
+  - {key: S01_topic,   name: 选题,     out: 01_topic.yaml,  gate: topic_pick}
+  - {key: S02_facts,   name: 事实表,   out: 02_facts.md}
+  - {key: S03_script,  name: 稿子,     out: 03_script.md}
+  - {key: S04_approve, name: 批稿,     out: "state.script.approved", gate: script_approve}
+  - {key: S05_vo,      name: 配音,     out: 04_vo/,  send_on_ready: true, gate: vo_listen}
+  - {key: S06_shots,   name: 分镜,     out: 05_shots.yaml}
+  - {key: S07_assets,  name: 素材,     out: 06_assets/, sources_file: 06_assets/SOURCES.md}
+  - {key: S08_render,  name: 渲染,     out: 07_render/, send_on_ready: true, gate: cut_review}
+  - {key: S09_publish, name: 发布包,   out: 08_publish/}
+  - {key: S10_data,    name: 数据回收, out: 09_data/}
+render:
+  draft_scale: 0.5
+  qc_after_send: true
+  qc_checks: [blackdetect, freezedetect, frame_count, subtitle_text_match]   # 不设响度、电平、峰值类检查（用户已取消）
+publish_pack: [cut_9x16, cover_9x16, cover_4x3_1440x1080, titles_x3_search_first, description, ai_label, form_checklist]
+data_checkpoints: [24h, 72h]

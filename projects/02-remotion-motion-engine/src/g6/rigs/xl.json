@@ -1,0 +1,170 @@
+{
+ "id": "xl",
+ "dir": "g6/xl",
+ "canvas": [
+  1024,
+  2048
+ ],
+ "source": "../../assets/G6/xiaolin/v1",
+ "draw_order": [
+  "leg_L",
+  "leg_R",
+  "torso",
+  "head",
+  "face_neutral",
+  "face_happy",
+  "face_surprised",
+  "face_confused",
+  "face_sad",
+  "face_angry",
+  "arm_L_upper",
+  "arm_R_upper",
+  "arm_L_lower",
+  "arm_R_lower",
+  "hand_R_point"
+ ],
+ "parts": {
+  "head": {
+   "file": "head.png",
+   "pivot": "neck",
+   "pivot_xy": [
+    512,
+    560
+   ]
+  },
+  "torso": {
+   "file": "torso.png",
+   "pivot": "waist",
+   "pivot_xy": [
+    512,
+    1100
+   ]
+  },
+  "leg_L": {
+   "file": "leg_L.png",
+   "pivot": "hip",
+   "pivot_xy": [
+    450,
+    1150
+   ]
+  },
+  "leg_R": {
+   "file": "leg_R.png",
+   "pivot": "hip",
+   "pivot_xy": [
+    574,
+    1150
+   ]
+  },
+  "arm_L_upper": {
+   "file": "arm_L_upper.png",
+   "pivot": "shoulder",
+   "pivot_xy": [
+    380,
+    640
+   ]
+  },
+  "arm_L_lower": {
+   "file": "arm_L_lower.png",
+   "pivot": "elbow",
+   "pivot_xy": [
+    350,
+    900
+   ],
+   "parent": "arm_L_upper"
+  },
+  "arm_R_upper": {
+   "file": "arm_R_upper.png",
+   "pivot": "shoulder",
+   "pivot_xy": [
+    644,
+    640
+   ]
+  },
+  "arm_R_lower": {
+   "file": "arm_R_lower.png",
+   "pivot": "elbow",
+   "pivot_xy": [
+    674,
+    900
+   ],
+   "parent": "arm_R_upper"
+  },
+  "hand_R_point": {
+   "file": "hand_R_point.png",
+   "pivot": "wrist",
+   "pivot_xy": [
+    690,
+    1120
+   ],
+   "parent": "arm_R_lower",
+   "optional": true
+  },
+  "face_neutral": {
+   "file": "face_neutral.png",
+   "pivot": "neck",
+   "pivot_xy": [
+    512,
+    560
+   ],
+   "parent": "head",
+   "face": "neutral"
+  },
+  "face_happy": {
+   "file": "face_happy.png",
+   "pivot": "neck",
+   "pivot_xy": [
+    512,
+    560
+   ],
+   "parent": "head",
+   "face": "happy"
+  },
+  "face_surprised": {
+   "file": "face_surprised.png",
+   "pivot": "neck",
+   "pivot_xy": [
+    512,
+    560
+   ],
+   "parent": "head",
+   "face": "surprised"
+  },
+  "face_confused": {
+   "file": "face_confused.png",
+   "pivot": "neck",
+   "pivot_xy": [
+    512,
+    560
+   ],
+   "parent": "head",
+   "face": "confused"
+  },
+  "face_sad": {
+   "file": "face_sad.png",
+   "pivot": "neck",
+   "pivot_xy": [
+    512,
+    560
+   ],
+   "parent": "head",
+   "face": "sad"
+  },
+  "face_angry": {
+   "file": "face_angry.png",
+   "pivot": "neck",
+   "pivot_xy": [
+    512,
+    560
+   ],
+   "parent": "head",
+   "face": "angry"
+  }
+ },
+ "exclusive": {
+  "hand_R_point": {
+   "hides": "arm_R_lower",
+   "clipBelowY": 1105
+  }
+ }
+}

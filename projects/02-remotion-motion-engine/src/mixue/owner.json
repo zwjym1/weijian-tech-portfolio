@@ -1,0 +1,47 @@
+{
+ "id": "owner",
+ "figH": 1623,
+ "placeholder": [],
+ "poses": {
+  "stand_neutral": {
+   "file": "mixue/a/owner_happy.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1981
+   ],
+   "figH": 1623
+  },
+  "happy": {
+   "file": "mixue/a/owner_happy.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1981
+   ],
+   "figH": 1623
+  },
+  "sigh_sad": {
+   "file": "mixue/a/owner_sigh.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1981
+   ],
+   "figH": 1623
+  },
+  "calc": {
+   "file": "mixue/a/owner_calc.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1981
+   ],
+   "figH": 1623
+  }
+ }
+}

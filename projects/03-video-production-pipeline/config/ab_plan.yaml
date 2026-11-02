@@ -1,0 +1,9 @@
+# 前 10 条 A/B 实验（W10：2026-10-22 用户批全案推荐）。每次只改一个变量，每组 ≥ 3 条，尽量同时段发布。
+experiments:
+  E1_hook:     {var: hook_type,  A: evidence_card_drop, B: big_number_or_question, episodes: [1, 4], metric: retention_5s}
+  E2_duration: {var: duration_s, A: [120, 180], B: [60, 90],                       episodes: [3, 8], metric: [completion_rate, saves_per_like]}
+  E3_guest:    {var: guest,      A: host_only, B: host_plus_guest,                 episodes: [5, 10], metric: [comments_naming_cast, shares_per_like]}
+  E4_aspect:   {var: aspect,     A: "16:9_main", B: "9:16_cut",                    episodes: all, metric: [play, follows_gained]}
+  host_look:   {var: host_look,  A: tbd, B: tbd, episodes: [1, 10], metric: comments_naming_cast}   # D2：等用户从 host_v2 候选中定
+rule: "10 条不下定论，第 30 条再定型；数据只记用户导出或截图确认的真实数"
+fields: [ep_id, publish_time, aspect, duration_s, hook_type, guest_id, host_look, column, play, likes, comments, saves, shares, follows_gained, completion_rate, retention_5s, avg_watch_s, comments_naming_cast, top_comment_is_quote, source_file, verified, missing_fields]

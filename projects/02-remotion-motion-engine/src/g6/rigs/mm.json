@@ -1,0 +1,29 @@
+{
+ "id": "mm",
+ "dir": "g6/ph",
+ "placeholder": true,
+ "note": "占位：整身单件，等 codex 散件到 assets/G6/ 后替换为分件 pivots.json",
+ "canvas": [
+  332,
+  880
+ ],
+ "draw_order": [
+  "body"
+ ],
+ "pivots": {
+  "feet": [
+   166,
+   880
+  ]
+ },
+ "parts": {
+  "body": {
+   "file": "mm_stand.png",
+   "pivot": "feet",
+   "pivot_xy": [
+    166,
+    880
+   ]
+  }
+ }
+}

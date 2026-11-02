@@ -1,0 +1,137 @@
+{
+ "id": "mm",
+ "figH": 1848,
+ "poses": {
+  "stand_neutral": {
+   "file": "g6/poses/mm/stand_neutral.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1980
+   ],
+   "figH": 1848
+  },
+  "stand_blink": {
+   "file": "g6/poses/mm/stand_blink.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1980
+   ],
+   "figH": 1849
+  },
+  "talk_open": {
+   "file": "g6/poses/mm/talk_open.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1980
+   ],
+   "figH": 1848
+  },
+  "walk_1": {
+   "file": "g6/poses/mm/walk_1.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1980
+   ],
+   "figH": 1814
+  },
+  "walk_2": {
+   "file": "g6/poses/mm/walk_2.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1980
+   ],
+   "figH": 1811
+  },
+  "walk_3": {
+   "file": "g6/poses/mm/walk_3.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1980
+   ],
+   "figH": 1814
+  },
+  "walk_4": {
+   "file": "g6/poses/mm/walk_4.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1980
+   ],
+   "figH": 1810
+  },
+  "point": {
+   "file": "g6/poses/mm/point.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1980
+   ],
+   "figH": 1849
+  },
+  "surprised": {
+   "file": "g6/poses/mm/surprised.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1980
+   ],
+   "figH": 1849
+  },
+  "happy": {
+   "file": "g6/poses/mm/happy.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1980
+   ],
+   "figH": 1849
+  },
+  "confused": {
+   "file": "g6/poses/mm/confused.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1980
+   ],
+   "figH": 1849
+  },
+  "sigh_sad": {
+   "file": "g6/poses/mm/sigh_sad.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1980
+   ],
+   "figH": 1792
+  },
+  "hold_bag": {
+   "file": "g6/poses/mm/hold_bag.png",
+   "w": 1024,
+   "h": 2048,
+   "foot": [
+    512,
+    1980
+   ],
+   "figH": 1849
+  }
+ },
+ "placeholder": []
+}

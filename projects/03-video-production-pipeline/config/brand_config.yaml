@@ -1,0 +1,104 @@
+# brand_config.yaml —— 秘书丞档案·品牌与制作参数（唯一来源；代码和 skill 只从这里读，不写死）
+# 取值来源：2026-10-22 用户批全案推荐（W1–W12、D1–D13 按 workflow_rebuild_plan_20261022.md v0.2 / 蓝图 Page 的推荐项）。
+# 以后换角色、换名字只改这里，不推倒重来。
+# 注意：用户已取消的 7 条（电平目标、禁用音效清单、强制印章、发布组件和定位、固定 BGM、LUFS、峰值）不在本文件中设任何字段或检查。
+
+version: 1
+decided_at: "2026-10-22 23:43 (UTC+8)"
+
+# ---- D 项（账号蓝图）----
+account_name: "秘书丞"                     # D3：2026-10-22 用户批全案推荐（蓝图无具体改名推荐，先保留「秘书丞」）
+series_title: "{account_name}档案·第{no:03d}卷｜{column}"   # 系列编号格式；2026-10-22 用户批全案推荐
+columns: [商业卷, 历史卷, 人性卷, 底层逻辑卷]  # 栏目分卷；2026-10-22 用户批全案推荐
+
+ip:
+  form: host_plus_guest                     # D1：档案官主理人（2026-10-23 定为秘书丞本人） + 每期换客串；2026-10-22 用户批全案推荐
+  host:
+    id: mishucheng                          # 2026-10-23 用户定：主理人=账号本人「秘书丞」，以旧 Q 版小官（/workspace/brand/v2/qban/Q1_*）为原型重画档案风
+    name: "秘书丞"
+    persona: "揭穿真相的档案官：古代掌管文书的官，冷静可信、略带调侃；每期调出一份卷宗，拆一个局"
+    identity_core: [乌纱帽两侧长翅剪影, 朱红官袍, 文书官身份（卷宗/朱笔）]
+    look_candidates:                        # v3 候选，总览 assets/cast/host_mishucheng/host_v3_overview.jpg（AI 生成）
+      S1: {name: 纸偶剪纸版, card: assets/cast/host_mishucheng/S1_paper_puppet/card_v1.jpg, status: selected}
+      S2: {name: 半写实插画版, card: assets/cast/host_mishucheng/S2_illustrated/card_v1.jpg, status: not_selected}
+      S3: {name: 极简符号版, card: assets/cast/host_mishucheng/S3_symbol/card_v1.jpg, status: not_selected}
+    look_current: S1                        # 2026-10-23 用户定：S1 纸偶剪纸版原样（不融合 S2/S3）
+    parts_dir: assets/cast/host_mishucheng/S1_paper_puppet/parts   # Remotion 透明底分件 + 三张换脸
+    expressions: [calm, smirk, expose]      # 平静讲述 / 挑眉调侃 / 瞪眼揭穿
+    rejected:                               # 用户否决，素材移到 assets/cast/_rejected/
+      - {id: H1_faceless_archivist, date: "2026-10-22"}
+      - {id: H2_paper_puppet, date: "2026-10-22"}
+      - {id: A_drawer_curator, date: "2026-10-23", dir: assets/cast/_rejected/host_v2/A_drawer_curator}
+      - {id: B_lamp_bearer, date: "2026-10-23", dir: assets/cast/_rejected/host_v2/B_lamp_bearer}
+      - {id: C_paper_crane, date: "2026-10-23", dir: assets/cast/_rejected/host_v2/C_paper_crane}
+  guests:
+    enabled: true                           # 客串每期从卡池抽，不为角色凑选题
+    pool_dir: assets/cast/guests
+    promote_rule: "每 10 条复盘一次，评论点名多的客串才升常驻"
+
+style:
+  id: dark_archive_codeviz                  # D4：暗底档案 × 代码可视化；2026-10-22 用户批全案推荐
+  palette: {bg: warm_black, accent: vermilion, contrast: cool_blue}
+  subtitle_font: serif_cn                   # 衬线中文，关键词朱红
+
+format:
+  aspect: {main: "16:9", cut: "9:16"}       # D5：横版主片 + 竖版切片；2026-10-22 用户批全案推荐
+  duration_s:                               # D6：A/B 测；2026-10-22 用户批全案推荐
+    main_default: [120, 180]
+    main_ab_alt: [60, 90]
+    cut: [50, 70]
+  dual_publish: true                        # W9：每条横竖双发；2026-10-22 用户批全案推荐
+
+bgm:                                        # D7：可选，按期定（不设固定曲、不设任何音量或响度目标）；2026-10-22 用户批全案推荐
+  mode: per_episode                         # 按期定：每期按内容挑；曲库只作候选（2026-10-22 用户定）
+  allow_none: true
+  library_dir: assets/bgm
+
+seal:                                       # 印章为可选素材（不强制）；2026-10-22 用户批全案推荐
+  optional: true
+  asset: assets/seal/seal_t.png
+
+voice:                                      # D8：固定 Fish TTS 声线，以后可换自录；2026-10-22 用户批全案推荐
+  engine: fish
+  model: s2.1-pro-free
+  voice_id: 906524668b6d4afe84736962e005cd09   # 2026-10-23 用户定：Fish v2 默认声线
+  temperature: 0.7
+  top_p: 0.7
+  latency: normal
+  chunk_length: 300
+  hint: "[语气平稳自然，像跟朋友聊天]"
+  self_record_later: true
+
+catchphrase:                                # D9：采用蓝图候选；2026-10-22 用户批全案推荐
+  open: "调档。"
+  close: "此卷，结案。"
+
+redlines:                                   # D10：按蓝图示例先填；2026-10-22 用户批全案推荐（用户可随时补充）
+  - 英烈
+  - 宗教恶搞
+  - 真实未成年人
+
+campaigns:
+  vibe_knowledge_awards:                    # D11：蹭 #vibe知识大赏；2026-10-22 用户批全案推荐
+    join: true
+    deadline: "2026-10-31（待到官方话题页核实）"
+
+second_account:                             # D12：达到条件就开；2026-10-22 用户批全案推荐
+  topic: AI 效率工具
+  open_when: "主号单条制作 ≤ 1 天，且已连续 4 周稳定周更 3 条（推测阈值）"
+
+first_batch_topics: topics/cards            # D13：首批 10 张选题卡按蓝图初筛方向建（第 ④ 步）；2026-10-22 用户批全案推荐
+
+# ---- W 项（工作流）----
+workflow:
+  root: /workspace/archive-studio           # W1；2026-10-22 用户批全案推荐
+  legacy_root_readonly: /workspace/science-studio   # W2：旧目录只读保留，旧 skill 停用不删；2026-10-22 用户批全案推荐
+  gates: [topic_pick, script_approve, vo_listen, cut_review]   # W3：只设 4 个闸口，取消创意方向闸口；2026-10-22 用户批全案推荐
+  writers_config: config/writers.yaml       # W6：调研和文案默认 Gemini，助手备选；助手从配音接手并入库；选题由助手选题系统做（2026-10-22 用户定）
+  render:                                   # W7：PC 优先渲染（PC 离线才用盒子）；2026-10-22 用户批全案推荐
+    prefer: pc
+    pc_machine: PC-20260301WTTM
+    pc_dir: 'D:\编程\项目\视频制作\作品\<YYYY-MM-DD_选题>\'
+  third_party_media: source_only            # W11：他人素材只记来源；2026-10-22 用户批全案推荐
+  ab_plan: config/ab_plan.yaml              # W10：E1–E4 采用；2026-10-22 用户批全案推荐
+  entry_skill_name: "秘书丞档案·视频全流程"  # W12；2026-10-22 用户批全案推荐

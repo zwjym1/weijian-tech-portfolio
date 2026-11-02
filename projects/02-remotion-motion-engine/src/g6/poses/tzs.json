@@ -1,0 +1,41 @@
+{
+ "id": "tzs",
+ "figH": 758,
+ "poses": {
+  "stand_neutral": {
+   "file": "g6/poses/tzs/stand_neutral.png",
+   "w": 521,
+   "h": 762,
+   "foot": [
+    253.46271682811445,
+    760
+   ],
+   "figH": 758
+  },
+  "point": {
+   "file": "g6/poses/tzs/point.png",
+   "w": 523,
+   "h": 760,
+   "foot": [
+    269.16351174934726,
+    758
+   ],
+   "figH": 756
+  },
+  "unroll": {
+   "file": "g6/poses/tzs/unroll.png",
+   "w": 525,
+   "h": 761,
+   "foot": [
+    256.12339866418483,
+    759
+   ],
+   "figH": 757
+  }
+ },
+ "placeholder": [
+  "stand_neutral",
+  "point",
+  "unroll"
+ ]
+}

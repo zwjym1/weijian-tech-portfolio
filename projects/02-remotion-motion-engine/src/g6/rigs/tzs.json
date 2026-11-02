@@ -1,0 +1,138 @@
+{
+ "canvas": [
+  1024,
+  2048
+ ],
+ "coord": "像素，原点左上",
+ "draw_order": [
+  "skirt",
+  "torso",
+  "arm_L",
+  "arm_R",
+  "head"
+ ],
+ "pivots": {
+  "neck": [
+   512,
+   772
+  ],
+  "waist": [
+   512,
+   1319
+  ],
+  "shoulder_L": [
+   312,
+   847
+  ],
+  "shoulder_R": [
+   713,
+   846
+  ]
+ },
+ "parts": {
+  "skirt": {
+   "file": "skirt.png",
+   "bbox_xyxy": [
+    225,
+    1303,
+    799,
+    1849
+   ],
+   "pivot": "waist",
+   "pivot_xy": [
+    512,
+    1319
+   ]
+  },
+  "torso": {
+   "file": "torso.png",
+   "bbox_xyxy": [
+    263,
+    755,
+    762,
+    1330
+   ],
+   "pivot": "waist",
+   "pivot_xy": [
+    512,
+    1319
+   ]
+  },
+  "arm_L": {
+   "file": "arm_L.png",
+   "bbox_xyxy": [
+    82,
+    801,
+    340,
+    1262
+   ],
+   "pivot": "shoulder_L",
+   "pivot_xy": [
+    312,
+    847
+   ]
+  },
+  "arm_R": {
+   "file": "arm_R.png",
+   "bbox_xyxy": [
+    685,
+    801,
+    942,
+    1260
+   ],
+   "pivot": "shoulder_R",
+   "pivot_xy": [
+    713,
+    846
+   ]
+  },
+  "head": {
+   "file": "head.png",
+   "bbox_xyxy": [
+    12,
+    198,
+    1012,
+    790
+   ],
+   "pivot": "neck",
+   "pivot_xy": [
+    512,
+    772
+   ]
+  }
+ },
+ "id": "tzs",
+ "dir": "g6/tzs",
+ "head_part": "head",
+ "face": {
+  "skin": "#FCE5D4",
+  "eyes": [
+   [
+    394,
+    630,
+    60,
+    52
+   ],
+   [
+    610,
+    622,
+    58,
+    54
+   ]
+  ],
+  "mouth": [
+   505,
+   723,
+   52,
+   32
+  ],
+  "brow": [
+   [
+    550,
+    525,
+    655,
+    550
+   ]
+  ]
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "name": "world-observatory-app",
+ "private": true,
+ "type": "module",
+ "scripts": {
+  "studio": "remotion studio",
+  "animatic": "mkdir -p out && remotion render Animatic ../renders/G4/animatic_draft.mp4 --scale=0.6666666666666666 --crf=24 --audio-bitrate=160k && ffmpeg -v error -y -i ../renders/G4/animatic_draft.mp4 -c:v copy -af loudnorm=I=-16:TP=-1.5:LRA=11 -ar 48000 -c:a aac -b:a 160k out/_norm.mp4 && mv out/_norm.mp4 ../renders/G4/animatic_draft.mp4",
+  "layertest": "remotion render LayerTest ../renders/G4/layer_test.mp4",
+  "tts": "python3 tools/tts.py zh-CN-YunyangNeural && python3 tools/build_captions.py",
+  "captions": "python3 tools/build_captions.py"
+ },
+ "dependencies": {
+  "remotion": "4.0.538",
+  "@remotion/cli": "4.0.538",
+  "react": "18.3.1",
+  "react-dom": "18.3.1"
+ },
+ "devDependencies": {
+  "typescript": "5.6.3",
+  "@types/react": "18.3.11"
+ }
+}

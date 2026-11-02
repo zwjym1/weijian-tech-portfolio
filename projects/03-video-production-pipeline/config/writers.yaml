@@ -1,0 +1,7 @@
+# 调研与文案入口切换（W6：2026-10-22 用户定：调研和文案默认交给 Gemini，助手为备选；
+# 助手从配音阶段开始接手并入库；选题仍由助手的选题系统做）
+topic: assistant        # 选题：助手的选题系统（固定）
+research: gemini        # gemini | assistant（备选）
+script: gemini          # gemini | assistant（备选）
+handoff_from: S05_vo    # 助手从配音开始接手，并把稿件、事实表入库
+gemini_handoff: scripts/export_gemini_pack.py   # 给 Gemini 导出选题与数据包
