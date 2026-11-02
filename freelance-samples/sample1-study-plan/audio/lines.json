@@ -1,0 +1,402 @@
+[
+ {
+  "i": 0,
+  "scene": "hook",
+  "text": "You have an essay to write, two chapters to read, and a quiz on Friday.",
+  "zh": "你要写一篇论文、读两章书，周五还有一次小测。",
+  "file": "l00.wav",
+  "dur": 4.139
+ },
+ {
+  "i": 1,
+  "scene": "hook",
+  "text": "Everything feels urgent, so it's hard to know where to start.",
+  "zh": "每件事都显得很急，所以很难知道从哪里开始。",
+  "file": "l01.wav",
+  "dur": 3.243
+ },
+ {
+  "i": 2,
+  "scene": "hook",
+  "text": "You look at the whole list, and instead of starting, you put it off.",
+  "zh": "你看着整张清单，结果没有开始，而是一拖再拖。",
+  "file": "l02.wav",
+  "dur": 3.285
+ },
+ {
+  "i": 3,
+  "scene": "hook",
+  "text": "If that sounds familiar, a simple plan can help.",
+  "zh": "如果你也这样，一份简单的计划可能会有帮助。",
+  "file": "l03.wav",
+  "dur": 2.901
+ },
+ {
+  "i": 4,
+  "scene": "intro",
+  "text": "In this video, I'll show you one simple way to plan your study week.",
+  "zh": "这个视频演示一种简单的一周学习计划方法。",
+  "file": "l04.wav",
+  "dur": 3.861
+ },
+ {
+  "i": 5,
+  "scene": "intro",
+  "text": "It has three steps: break it down, schedule it, and review it.",
+  "zh": "它分三步：拆分、排进日程、复盘。",
+  "file": "l05.wav",
+  "dur": 3.499
+ },
+ {
+  "i": 6,
+  "scene": "intro",
+  "text": "You don't need special tools, or a perfect schedule.",
+  "zh": "你不需要特别的工具，也不需要完美的日程。",
+  "file": "l06.wav",
+  "dur": 2.923
+ },
+ {
+  "i": 7,
+  "scene": "intro",
+  "text": "All you need is a notebook, or a calendar app you already use.",
+  "zh": "你只需要一个本子，或你已经在用的日历应用。",
+  "file": "l07.wav",
+  "dur": 3.52
+ },
+ {
+  "i": 8,
+  "scene": "intro",
+  "text": "Let's go through each step, using the same three tasks.",
+  "zh": "我们用这三个任务，把每一步走一遍。",
+  "file": "l08.wav",
+  "dur": 3.157
+ },
+ {
+  "i": 9,
+  "scene": "breakdown",
+  "text": "Step one: break each big task into small steps.",
+  "zh": "第一步：把每个大任务拆成小步骤。",
+  "file": "l09.wav",
+  "dur": 2.923
+ },
+ {
+  "i": 10,
+  "scene": "breakdown",
+  "text": "A small step is something you can finish in one sitting.",
+  "zh": "小步骤就是坐下来一次能做完的事。",
+  "file": "l10.wav",
+  "dur": 3.029
+ },
+ {
+  "i": 11,
+  "scene": "breakdown",
+  "text": "It should start with a clear action word, like read, write, or check.",
+  "zh": "它应该以明确的动作词开头，比如读、写、检查。",
+  "file": "l11.wav",
+  "dur": 3.925
+ },
+ {
+  "i": 12,
+  "scene": "breakdown",
+  "text": "Let's use the essay as an example.",
+  "zh": "我们以论文为例。",
+  "file": "l12.wav",
+  "dur": 2.197
+ },
+ {
+  "i": 13,
+  "scene": "breakdown",
+  "text": "\"Write the essay\" is too big to start. So we split it.",
+  "zh": "“写论文”太大，无从下手，所以我们拆开它。",
+  "file": "l13.wav",
+  "dur": 3.093
+ },
+ {
+  "i": 14,
+  "scene": "breakdown",
+  "text": "Choose a topic. Find three sources. Write an outline.",
+  "zh": "选题。找三份资料。写提纲。",
+  "file": "l14.wav",
+  "dur": 3.307
+ },
+ {
+  "i": 15,
+  "scene": "breakdown",
+  "text": "Draft the introduction. Draft the body. Then edit and submit.",
+  "zh": "写引言初稿。写正文初稿。然后修改并提交。",
+  "file": "l15.wav",
+  "dur": 3.904
+ },
+ {
+  "i": 16,
+  "scene": "breakdown",
+  "text": "Now every item is clear, and you know exactly what to do next.",
+  "zh": "现在每一项都很清楚，你知道下一步做什么。",
+  "file": "l16.wav",
+  "dur": 3.776
+ },
+ {
+  "i": 17,
+  "scene": "breakdown",
+  "text": "Notice that each step starts with a verb, and each one has a clear end.",
+  "zh": "注意每一步都以动词开头，并且有明确的完成点。",
+  "file": "l17.wav",
+  "dur": 4.032
+ },
+ {
+  "i": 18,
+  "scene": "breakdown",
+  "text": "Do the same for the reading and the quiz.",
+  "zh": "对阅读和小测也这样做。",
+  "file": "l18.wav",
+  "dur": 2.048
+ },
+ {
+  "i": 19,
+  "scene": "breakdown",
+  "text": "Read chapter four. Read chapter five. Review your notes. Try one practice quiz.",
+  "zh": "读第四章。读第五章。复习笔记。做一次练习题。",
+  "file": "l19.wav",
+  "dur": 5.291
+ },
+ {
+  "i": 20,
+  "scene": "breakdown",
+  "text": "Next to each step, write a rough time estimate. A guess is fine.",
+  "zh": "在每一步旁边写一个大概的用时估计，猜一下就行。",
+  "file": "l20.wav",
+  "dur": 3.883
+ },
+ {
+  "i": 21,
+  "scene": "breakdown",
+  "text": "Now we have ten small steps instead of three big tasks.",
+  "zh": "现在我们有十个小步骤，而不是三个大任务。",
+  "file": "l21.wav",
+  "dur": 3.349
+ },
+ {
+  "i": 22,
+  "scene": "calendar",
+  "text": "Step two: put the small steps on a calendar.",
+  "zh": "第二步：把小步骤放进日历。",
+  "file": "l22.wav",
+  "dur": 2.56
+ },
+ {
+  "i": 23,
+  "scene": "calendar",
+  "text": "First, mark the time you actually have.",
+  "zh": "先标出你真正有空的时间。",
+  "file": "l23.wav",
+  "dur": 2.304
+ },
+ {
+  "i": 24,
+  "scene": "calendar",
+  "text": "In this example, there's about one hour on weekday evenings, and a longer block on Saturday.",
+  "zh": "在这个示例里，工作日晚上大约一小时，周六有一段较长的时间。",
+  "file": "l24.wav",
+  "dur": 5.483
+ },
+ {
+  "i": 25,
+  "scene": "calendar",
+  "text": "Your times will be different, and that's okay.",
+  "zh": "你的时间会不一样，这没关系。",
+  "file": "l25.wav",
+  "dur": 2.347
+ },
+ {
+  "i": 26,
+  "scene": "calendar",
+  "text": "Be honest here. Include classes, work, meals, and rest.",
+  "zh": "这里要诚实，把上课、工作、吃饭和休息都算进去。",
+  "file": "l26.wav",
+  "dur": 3.456
+ },
+ {
+  "i": 27,
+  "scene": "calendar",
+  "text": "Now place the steps. Start with anything that has a deadline.",
+  "zh": "现在放入步骤，先放有截止日期的。",
+  "file": "l27.wav",
+  "dur": 3.541
+ },
+ {
+  "i": 28,
+  "scene": "calendar",
+  "text": "Each small step should fit inside one block of time.",
+  "zh": "每个小步骤应能放进一个时间块里。",
+  "file": "l28.wav",
+  "dur": 2.837
+ },
+ {
+  "i": 29,
+  "scene": "calendar",
+  "text": "The quiz is on Friday, so the reading and review go early in the week.",
+  "zh": "小测在周五，所以阅读和复习排在周初。",
+  "file": "l29.wav",
+  "dur": 3.861
+ },
+ {
+  "i": 30,
+  "scene": "calendar",
+  "text": "The essay steps fill the remaining slots.",
+  "zh": "论文步骤填进剩下的时段。",
+  "file": "l30.wav",
+  "dur": 2.368
+ },
+ {
+  "i": 31,
+  "scene": "calendar",
+  "text": "And leave one slot empty. Plans rarely go exactly as written, so a free slot gives you room to catch up.",
+  "zh": "再留一个空档。计划很少完全按写的走，空档让你有余地补上。",
+  "file": "l31.wav",
+  "dur": 6.827
+ },
+ {
+  "i": 32,
+  "scene": "calendar",
+  "text": "Now the week has a clear shape. You can see what to do each day.",
+  "zh": "现在这一周有了清晰的样子，你能看到每天要做什么。",
+  "file": "l32.wav",
+  "dur": 3.541
+ },
+ {
+  "i": 33,
+  "scene": "review",
+  "text": "Step three: review and adjust.",
+  "zh": "第三步：复盘并调整。",
+  "file": "l33.wav",
+  "dur": 1.792
+ },
+ {
+  "i": 34,
+  "scene": "review",
+  "text": "At the end of each day, check off what you finished.",
+  "zh": "每天结束时，勾掉已完成的事。",
+  "file": "l34.wav",
+  "dur": 2.603
+ },
+ {
+  "i": 35,
+  "scene": "review",
+  "text": "This takes about two minutes, and it shows you where you are.",
+  "zh": "这大约只需两分钟，能让你知道自己进展到哪里。",
+  "file": "l35.wav",
+  "dur": 3.072
+ },
+ {
+  "i": 36,
+  "scene": "review",
+  "text": "Say the outline took longer than you expected on Wednesday.",
+  "zh": "假设周三写提纲比预想的久。",
+  "file": "l36.wav",
+  "dur": 3.115
+ },
+ {
+  "i": 37,
+  "scene": "review",
+  "text": "That's not a failure. It's useful information.",
+  "zh": "这不是失败，而是有用的信息。",
+  "file": "l37.wav",
+  "dur": 2.709
+ },
+ {
+  "i": 38,
+  "scene": "review",
+  "text": "Move the unfinished step into your free slot, and keep going.",
+  "zh": "把没做完的步骤挪到空档里，继续推进。",
+  "file": "l38.wav",
+  "dur": 3.413
+ },
+ {
+  "i": 39,
+  "scene": "review",
+  "text": "If a step keeps getting pushed back, it may still be too big. Split it again.",
+  "zh": "如果某一步总被推迟，它可能还是太大，再拆一次。",
+  "file": "l39.wav",
+  "dur": 4.203
+ },
+ {
+  "i": 40,
+  "scene": "review",
+  "text": "At the end of the week, ask yourself two questions.",
+  "zh": "周末问自己两个问题。",
+  "file": "l40.wav",
+  "dur": 2.709
+ },
+ {
+  "i": 41,
+  "scene": "review",
+  "text": "What worked? And what should I change next week?",
+  "zh": "什么做得好？下周要改什么？",
+  "file": "l41.wav",
+  "dur": 2.475
+ },
+ {
+  "i": 42,
+  "scene": "review",
+  "text": "Use the answers to make next week's plan a little better.",
+  "zh": "用这些答案让下周的计划更好一点。",
+  "file": "l42.wav",
+  "dur": 2.816
+ },
+ {
+  "i": 43,
+  "scene": "recap",
+  "text": "So, let's recap.",
+  "zh": "我们来回顾一下。",
+  "file": "l43.wav",
+  "dur": 1.195
+ },
+ {
+  "i": 44,
+  "scene": "recap",
+  "text": "One: break big tasks into small steps.",
+  "zh": "一：把大任务拆成小步骤。",
+  "file": "l44.wav",
+  "dur": 2.453
+ },
+ {
+  "i": 45,
+  "scene": "recap",
+  "text": "Two: schedule them in the time you really have.",
+  "zh": "二：排进你真正有的时间里。",
+  "file": "l45.wav",
+  "dur": 2.645
+ },
+ {
+  "i": 46,
+  "scene": "recap",
+  "text": "Three: review each day, and adjust.",
+  "zh": "三：每天复盘并调整。",
+  "file": "l46.wav",
+  "dur": 2.091
+ },
+ {
+  "i": 47,
+  "scene": "recap",
+  "text": "You don't have to get it perfect. A simple plan you actually use is better than a perfect plan you never start.",
+  "zh": "不需要做到完美。一份你真正会用的简单计划，好过一份从未开始的完美计划。",
+  "file": "l47.wav",
+  "dur": 6.443
+ },
+ {
+  "i": 48,
+  "scene": "recap",
+  "text": "Try it with just one task this week, and see how it works for you.",
+  "zh": "这周先拿一个任务试试，看看效果如何。",
+  "file": "l48.wav",
+  "dur": 3.733
+ },
+ {
+  "i": 49,
+  "scene": "recap",
+  "text": "Thanks for watching.",
+  "zh": "感谢观看。",
+  "file": "l49.wav",
+  "dur": 1.301
+ }
+]

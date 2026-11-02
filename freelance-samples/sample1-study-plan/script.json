@@ -1,0 +1,234 @@
+{
+ "scenes": [
+  {
+   "id": "hook",
+   "lines": [
+    [
+     "You have an essay to write, two chapters to read, and a quiz on Friday.",
+     "你要写一篇论文、读两章书，周五还有一次小测。"
+    ],
+    [
+     "Everything feels urgent, so it's hard to know where to start.",
+     "每件事都显得很急，所以很难知道从哪里开始。"
+    ],
+    [
+     "You look at the whole list, and instead of starting, you put it off.",
+     "你看着整张清单，结果没有开始，而是一拖再拖。"
+    ],
+    [
+     "If that sounds familiar, a simple plan can help.",
+     "如果你也这样，一份简单的计划可能会有帮助。"
+    ]
+   ]
+  },
+  {
+   "id": "intro",
+   "lines": [
+    [
+     "In this video, I'll show you one simple way to plan your study week.",
+     "这个视频演示一种简单的一周学习计划方法。"
+    ],
+    [
+     "It has three steps: break it down, schedule it, and review it.",
+     "它分三步：拆分、排进日程、复盘。"
+    ],
+    [
+     "You don't need special tools, or a perfect schedule.",
+     "你不需要特别的工具，也不需要完美的日程。"
+    ],
+    [
+     "All you need is a notebook, or a calendar app you already use.",
+     "你只需要一个本子，或你已经在用的日历应用。"
+    ],
+    [
+     "Let's go through each step, using the same three tasks.",
+     "我们用这三个任务，把每一步走一遍。"
+    ]
+   ]
+  },
+  {
+   "id": "breakdown",
+   "lines": [
+    [
+     "Step one: break each big task into small steps.",
+     "第一步：把每个大任务拆成小步骤。"
+    ],
+    [
+     "A small step is something you can finish in one sitting.",
+     "小步骤就是坐下来一次能做完的事。"
+    ],
+    [
+     "It should start with a clear action word, like read, write, or check.",
+     "它应该以明确的动作词开头，比如读、写、检查。"
+    ],
+    [
+     "Let's use the essay as an example.",
+     "我们以论文为例。"
+    ],
+    [
+     "\"Write the essay\" is too big to start. So we split it.",
+     "“写论文”太大，无从下手，所以我们拆开它。"
+    ],
+    [
+     "Choose a topic. Find three sources. Write an outline.",
+     "选题。找三份资料。写提纲。"
+    ],
+    [
+     "Draft the introduction. Draft the body. Then edit and submit.",
+     "写引言初稿。写正文初稿。然后修改并提交。"
+    ],
+    [
+     "Now every item is clear, and you know exactly what to do next.",
+     "现在每一项都很清楚，你知道下一步做什么。"
+    ],
+    [
+     "Notice that each step starts with a verb, and each one has a clear end.",
+     "注意每一步都以动词开头，并且有明确的完成点。"
+    ],
+    [
+     "Do the same for the reading and the quiz.",
+     "对阅读和小测也这样做。"
+    ],
+    [
+     "Read chapter four. Read chapter five. Review your notes. Try one practice quiz.",
+     "读第四章。读第五章。复习笔记。做一次练习题。"
+    ],
+    [
+     "Next to each step, write a rough time estimate. A guess is fine.",
+     "在每一步旁边写一个大概的用时估计，猜一下就行。"
+    ],
+    [
+     "Now we have ten small steps instead of three big tasks.",
+     "现在我们有十个小步骤，而不是三个大任务。"
+    ]
+   ]
+  },
+  {
+   "id": "calendar",
+   "lines": [
+    [
+     "Step two: put the small steps on a calendar.",
+     "第二步：把小步骤放进日历。"
+    ],
+    [
+     "First, mark the time you actually have.",
+     "先标出你真正有空的时间。"
+    ],
+    [
+     "In this example, there's about one hour on weekday evenings, and a longer block on Saturday.",
+     "在这个示例里，工作日晚上大约一小时，周六有一段较长的时间。"
+    ],
+    [
+     "Your times will be different, and that's okay.",
+     "你的时间会不一样，这没关系。"
+    ],
+    [
+     "Be honest here. Include classes, work, meals, and rest.",
+     "这里要诚实，把上课、工作、吃饭和休息都算进去。"
+    ],
+    [
+     "Now place the steps. Start with anything that has a deadline.",
+     "现在放入步骤，先放有截止日期的。"
+    ],
+    [
+     "Each small step should fit inside one block of time.",
+     "每个小步骤应能放进一个时间块里。"
+    ],
+    [
+     "The quiz is on Friday, so the reading and review go early in the week.",
+     "小测在周五，所以阅读和复习排在周初。"
+    ],
+    [
+     "The essay steps fill the remaining slots.",
+     "论文步骤填进剩下的时段。"
+    ],
+    [
+     "And leave one slot empty. Plans rarely go exactly as written, so a free slot gives you room to catch up.",
+     "再留一个空档。计划很少完全按写的走，空档让你有余地补上。"
+    ],
+    [
+     "Now the week has a clear shape. You can see what to do each day.",
+     "现在这一周有了清晰的样子，你能看到每天要做什么。"
+    ]
+   ]
+  },
+  {
+   "id": "review",
+   "lines": [
+    [
+     "Step three: review and adjust.",
+     "第三步：复盘并调整。"
+    ],
+    [
+     "At the end of each day, check off what you finished.",
+     "每天结束时，勾掉已完成的事。"
+    ],
+    [
+     "This takes about two minutes, and it shows you where you are.",
+     "这大约只需两分钟，能让你知道自己进展到哪里。"
+    ],
+    [
+     "Say the outline took longer than you expected on Wednesday.",
+     "假设周三写提纲比预想的久。"
+    ],
+    [
+     "That's not a failure. It's useful information.",
+     "这不是失败，而是有用的信息。"
+    ],
+    [
+     "Move the unfinished step into your free slot, and keep going.",
+     "把没做完的步骤挪到空档里，继续推进。"
+    ],
+    [
+     "If a step keeps getting pushed back, it may still be too big. Split it again.",
+     "如果某一步总被推迟，它可能还是太大，再拆一次。"
+    ],
+    [
+     "At the end of the week, ask yourself two questions.",
+     "周末问自己两个问题。"
+    ],
+    [
+     "What worked? And what should I change next week?",
+     "什么做得好？下周要改什么？"
+    ],
+    [
+     "Use the answers to make next week's plan a little better.",
+     "用这些答案让下周的计划更好一点。"
+    ]
+   ]
+  },
+  {
+   "id": "recap",
+   "lines": [
+    [
+     "So, let's recap.",
+     "我们来回顾一下。"
+    ],
+    [
+     "One: break big tasks into small steps.",
+     "一：把大任务拆成小步骤。"
+    ],
+    [
+     "Two: schedule them in the time you really have.",
+     "二：排进你真正有的时间里。"
+    ],
+    [
+     "Three: review each day, and adjust.",
+     "三：每天复盘并调整。"
+    ],
+    [
+     "You don't have to get it perfect. A simple plan you actually use is better than a perfect plan you never start.",
+     "不需要做到完美。一份你真正会用的简单计划，好过一份从未开始的完美计划。"
+    ],
+    [
+     "Try it with just one task this week, and see how it works for you.",
+     "这周先拿一个任务试试，看看效果如何。"
+    ],
+    [
+     "Thanks for watching.",
+     "感谢观看。"
+    ]
+   ]
+  }
+ ]
+}
