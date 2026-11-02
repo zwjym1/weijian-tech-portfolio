@@ -1,0 +1,222 @@
+[
+ {
+  "n": 0,
+  "line": 0,
+  "sent": 0,
+  "scene": "hook",
+  "text": "This essay has been on your list for a week.",
+  "zh": "这篇论文在你清单上躺了一周，你还是没开始。",
+  "line_text": "This essay has been on your list for a week. And you still haven't started.",
+  "file": "s000.wav",
+  "dur": 2.219
+ },
+ {
+  "n": 1,
+  "line": 0,
+  "sent": 1,
+  "scene": "hook",
+  "text": "And you still haven't started.",
+  "zh": "",
+  "line_text": "This essay has been on your list for a week. And you still haven't started.",
+  "file": "s001.wav",
+  "dur": 1.621
+ },
+ {
+  "n": 2,
+  "line": 1,
+  "sent": 0,
+  "scene": "hook",
+  "text": "The problem isn't you.",
+  "zh": "问题不在你，是任务太大了。",
+  "line_text": "The problem isn't you. The task is just too big.",
+  "file": "s002.wav",
+  "dur": 1.365
+ },
+ {
+  "n": 3,
+  "line": 1,
+  "sent": 1,
+  "scene": "hook",
+  "text": "The task is just too big.",
+  "zh": "",
+  "line_text": "The problem isn't you. The task is just too big.",
+  "file": "s003.wav",
+  "dur": 1.621
+ },
+ {
+  "n": 4,
+  "line": 2,
+  "sent": 0,
+  "scene": "smash",
+  "text": "So smash it into three smaller steps.",
+  "zh": "所以把它拆成三个小步骤。",
+  "line_text": "So smash it into three smaller steps.",
+  "file": "s004.wav",
+  "dur": 2.261
+ },
+ {
+  "n": 5,
+  "line": 3,
+  "sent": 0,
+  "scene": "smash",
+  "text": "Step one.",
+  "zh": "第一步：选题，大约二十分钟。",
+  "line_text": "Step one. Choose a topic. About twenty minutes.",
+  "file": "s005.wav",
+  "dur": 0.917
+ },
+ {
+  "n": 6,
+  "line": 3,
+  "sent": 1,
+  "scene": "smash",
+  "text": "Choose a topic.",
+  "zh": "",
+  "line_text": "Step one. Choose a topic. About twenty minutes.",
+  "file": "s006.wav",
+  "dur": 1.131
+ },
+ {
+  "n": 7,
+  "line": 3,
+  "sent": 2,
+  "scene": "smash",
+  "text": "About twenty minutes.",
+  "zh": "",
+  "line_text": "Step one. Choose a topic. About twenty minutes.",
+  "file": "s007.wav",
+  "dur": 1.323
+ },
+ {
+  "n": 8,
+  "line": 4,
+  "sent": 0,
+  "scene": "smash",
+  "text": "Step two.",
+  "zh": "第二步：写提纲，大约三十分钟。",
+  "line_text": "Step two. Write an outline. About thirty minutes.",
+  "file": "s008.wav",
+  "dur": 0.939
+ },
+ {
+  "n": 9,
+  "line": 4,
+  "sent": 1,
+  "scene": "smash",
+  "text": "Write an outline.",
+  "zh": "",
+  "line_text": "Step two. Write an outline. About thirty minutes.",
+  "file": "s009.wav",
+  "dur": 1.152
+ },
+ {
+  "n": 10,
+  "line": 4,
+  "sent": 2,
+  "scene": "smash",
+  "text": "About thirty minutes.",
+  "zh": "",
+  "line_text": "Step two. Write an outline. About thirty minutes.",
+  "file": "s010.wav",
+  "dur": 1.344
+ },
+ {
+  "n": 11,
+  "line": 5,
+  "sent": 0,
+  "scene": "smash",
+  "text": "Step three.",
+  "zh": "第三步：写一个部分的初稿。就这些。",
+  "line_text": "Step three. Draft one section. That's it.",
+  "file": "s011.wav",
+  "dur": 0.96
+ },
+ {
+  "n": 12,
+  "line": 5,
+  "sent": 1,
+  "scene": "smash",
+  "text": "Draft one section.",
+  "zh": "",
+  "line_text": "Step three. Draft one section. That's it.",
+  "file": "s012.wav",
+  "dur": 1.28
+ },
+ {
+  "n": 13,
+  "line": 5,
+  "sent": 2,
+  "scene": "smash",
+  "text": "That's it.",
+  "zh": "",
+  "line_text": "Step three. Draft one section. That's it.",
+  "file": "s013.wav",
+  "dur": 0.896
+ },
+ {
+  "n": 14,
+  "line": 6,
+  "sent": 0,
+  "scene": "smash",
+  "text": "Each step starts with a verb, and fits in one sitting.",
+  "zh": "每一步都以动词开头，一次坐下就能完成。",
+  "line_text": "Each step starts with a verb, and fits in one sitting.",
+  "file": "s014.wav",
+  "dur": 3.115
+ },
+ {
+  "n": 15,
+  "line": 7,
+  "sent": 0,
+  "scene": "payoff",
+  "text": "Now you don't have to write an essay tonight.",
+  "zh": "现在你今晚不用写完一篇论文。",
+  "line_text": "Now you don't have to write an essay tonight.",
+  "file": "s015.wav",
+  "dur": 2.304
+ },
+ {
+  "n": 16,
+  "line": 8,
+  "sent": 0,
+  "scene": "payoff",
+  "text": "You just have to choose a topic.",
+  "zh": "你只需要选个题。",
+  "line_text": "You just have to choose a topic.",
+  "file": "s016.wav",
+  "dur": 1.856
+ },
+ {
+  "n": 17,
+  "line": 9,
+  "sent": 0,
+  "scene": "recap",
+  "text": "One task.",
+  "zh": "一个任务，三个小步骤。",
+  "line_text": "One task. Three smaller steps.",
+  "file": "s017.wav",
+  "dur": 1.003
+ },
+ {
+  "n": 18,
+  "line": 9,
+  "sent": 1,
+  "scene": "recap",
+  "text": "Three smaller steps.",
+  "zh": "",
+  "line_text": "One task. Three smaller steps.",
+  "file": "s018.wav",
+  "dur": 1.387
+ },
+ {
+  "n": 19,
+  "line": 10,
+  "sent": 0,
+  "scene": "recap",
+  "text": "Try it on your next big task.",
+  "zh": "下一个大任务就试试。",
+  "line_text": "Try it on your next big task.",
+  "file": "s019.wav",
+  "dur": 1.92
+ }
+]
