@@ -44,6 +44,16 @@ const useGL = (frag: string, draw: (gl: WebGLRenderingContext, prog: WebGLProgra
   return ref;
 };
 
+const DARK_FRAG = "precision mediump float; varying vec2 v_uv; uniform float u_t; uniform vec3 u_tint;" + NQ +
+  "void main(){vec2 p=v_uv*vec2(1.78,1.)*1.2; float n=fbm(p+vec2(u_t*.04,-u_t*.03)); float m=fbm(p*2.+n*1.5-u_t*.05);" +
+  "vec3 base=vec3(.055,.07,.125); vec3 c=base+u_tint*.10*smoothstep(.35,.9,m)+vec3(.02,.03,.06)*n;" +
+  "float v=length((v_uv-.5)*vec2(1.2,1.)); c*=1.-.55*smoothstep(.35,.95,v);" +
+  "float g=fract(sin(dot(v_uv*vec2(1920.,1080.)+u_t*61.,vec2(12.9898,78.233)))*43758.5453); c+=(g-.5)*.025;" +
+  "gl_FragColor=vec4(c,1.);}";
+export const DarkBg = ({tint}: {tint: [number, number, number]}) => { const fr = useCurrentFrame();
+  const ref = useGL(DARK_FRAG, (gl, p) => { gl.uniform1f(gl.getUniformLocation(p, 'u_t'), fr / 30); gl.uniform3fv(gl.getUniformLocation(p, 'u_tint'), tint); }, fr);
+  return <canvas ref={ref} width={960} height={540} style={{position:'absolute', inset:0, width:1920, height:1080}}/>; };
+
 export const ShaderBg = ({tint}: {tint: [number, number, number]}) => { const fr = useCurrentFrame();
   const ref = useGL(BG_FRAG, (gl, p) => { gl.uniform1f(gl.getUniformLocation(p, 'u_t'), fr / 30); gl.uniform3fv(gl.getUniformLocation(p, 'u_tint'), tint); }, fr);
   return <canvas ref={ref} width={960} height={540} style={{position:'absolute', inset:0, width:1920, height:1080}}/>; };

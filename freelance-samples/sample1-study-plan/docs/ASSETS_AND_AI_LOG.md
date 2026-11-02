@@ -1,9 +1,10 @@
 # Asset list & AI usage log — Sample 1
-Checked 2026-11-02 (UTC+8). No stock footage, no music, no third-party images, no logos/trademarks, no real people.
+Checked 2026-11-02 (UTC+8). No stock footage, no third-party images, no logos/trademarks, no real people.
 
 | Asset | Source / author | License | Commercial use | Date |
 |---|---|---|---|---|
 | All graphics, icons, layouts, animation | Self-made (code in `remotion/src/Video.tsx`) | Own work | Yes | 2026-11-02 |
+| Music (v3) | "Inspired" — Kevin MacLeod, https://incompetech.com/music/royalty-free/mp3-royaltyfree/Inspired.mp3 (ISRC USUAN1600022) | Creative Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/) | Yes, with credit. Credit is on the end card and in the description. | 2026-11-02 |
 | Font: Inter | Rasmus Andersson, system-installed | SIL OFL 1.1 | Yes | — |
 | Voice-over | Kokoro-82M TTS model (hexgrad), voice `af_heart`, run locally via `kokoro-onnx` 0.6.1 (thewh1teagle, MIT) | Model weights Apache-2.0 | Yes (Apache-2.0) | 2026-11-02 |
 | Render framework | Remotion 4.0.538 | Remotion License: free for individuals | Yes for an individual | — |
@@ -19,3 +20,11 @@ Checked 2026-11-02 (UTC+8). No stock footage, no music, no third-party images, n
 | Images / video generation | Not used | — | — |
 
 Rejected: Fish Audio free tier — its terms limit free-plan output to personal, non-commercial use, so it was not used for this public sample. No voice or face cloning.
+
+
+## Music credit (required by CC BY 4.0)
+"Inspired" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
+
+Mix: music −17 dB under VO with sidechain ducking (ffmpeg `sidechaincompress`), fades in/out; final −16 LUFS.
