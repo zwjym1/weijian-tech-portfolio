@@ -21,3 +21,7 @@ File: `study_plan_1080p_v3.mp4` (69 MB)
 - Short one-word sentences ("Done.", "Classes.") stay on screen for less than 1 s. That is intentional for rhythm, but fast for non-native readers.
 - Checked with 16 keyframes and 34 sampled stills, not frame by frame.
 - Background music is a well-known free track (Kevin MacLeod), so it may sound familiar on YouTube.
+
+## v3.1 fix (2026-11-02, UTC+8)
+- Bug: in v3 the "WRITE THE ESSAY" block (≈0:13 and ≈0:42–0:50) wrapped onto two left-aligned lines. Fixed: 80 px, no-wrap, centred. Everything else unchanged.
+- Output: `study_plan_1080p_v3_1.mp4` (release `sample1-v3.1`). v2 and v3 kept as they were.

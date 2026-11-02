@@ -1,0 +1,35 @@
+# Sample 3 — Script (EN / 中文)
+
+One caption cue per sentence (29 cues). Voice: Kokoro-82M af_heart.
+
+| # | Part | EN (caption) | 中文 |
+|---|---|---|---|
+| 1 | intro | Captions make a video easier to follow, even with the sound off. | 字幕让视频即使静音也容易看懂。 |
+| 2 | intro | In this tutorial, I'll add captions to a short clip using Shotcut, a free and open-source video editor. | 本教程用免费开源剪辑软件 Shotcut 给一段短视频加字幕。 |
+| 3 | intro | We'll import the clip, add captions, check the timing, move them into place, and export. | 步骤：导入、加字幕、检查时间、调整位置、导出。 |
+| 4 | s01 | Click Open File, choose your video, and press Enter. | 点击 Open File，选择视频并回车，片段会在播放器中打开。 |
+| 5 | s01 | The clip opens in the player. |  |
+| 6 | s02 | Click the plus button in the timeline to add the clip to your project. | 点击时间线上的加号，把片段加入项目。 |
+| 7 | s03 | Next, click Subtitles in the toolbar to open the Subtitles panel. | 然后点击工具栏的 Subtitles，打开字幕面板。 |
+| 8 | s04 | Click the plus button at the top to create a new subtitle track. | 点击顶部加号新建字幕轨，命名、语言选英语，点 OK。 |
+| 9 | s04 | Name it, set the language to English, and click OK. |  |
+| 10 | s05 | Now move the playhead to where the first line starts. | 把播放头移到第一句开始处，点击添加，在 Current 框输入字幕。 |
+| 11 | s05 | Click Add, and type the caption into the Current box. |  |
+| 12 | s06 | To end the caption, move the playhead to the end of the line, and click Set End. | 把播放头移到这句结尾，点击 Set End 设置结束点。 |
+| 13 | s07 | Repeat the same steps for the next two lines. | 后两句重复同样的步骤。 |
+| 14 | s08 | To show the captions on the video, click the Burn In button. | 点击 Burn In 按钮，会在输出上添加字幕烧录滤镜，字幕就显示在画面上。 |
+| 15 | s08 | It adds a Subtitle Burn In filter to the output. |  |
+| 16 | s09 | Play it back from the start, and check that each caption matches what you hear. | 从头播放，检查每条字幕是否和声音对应。 |
+| 17 | s10 | If a caption needs to start earlier, move the playhead, select the caption, and click Set Start. | 如果字幕需要提前开始，先移动播放头，再选中字幕，点击 Set Start。 |
+| 18 | s11 | Now let's reposition the captions. | 接下来调整字幕位置。在滤镜面板里，字幕烧录滤镜控制位置和样式。 |
+| 19 | s11 | In the Filters panel, the Subtitle Burn In filter controls position and style. |  |
+| 20 | s12 | I move them up a little by changing the vertical position. | 修改垂直位置把字幕上移一点，再加粗描边，让文字更清晰。 |
+| 21 | s12 | Then I make the outline thicker, so the text stays readable. |  |
+| 22 | s13 | When it looks right, click Export. | 满意后点击 Export，保持 Default 预设（H.264 MP4），点击导出。 |
+| 23 | s13 | Keep the Default preset, which makes an H.264 MP4 file, and click Export Video and Audio. |  |
+| 24 | s14 | Type a file name and press Enter. | 输入文件名并回车，Shotcut 在任务面板中渲染。 |
+| 25 | s14 | Shotcut renders the video in the Jobs panel. |  |
+| 26 | s15 | When the job is done, open the new file to check the result. | 任务完成后打开新文件检查，字幕已经烧进视频里了。 |
+| 27 | s15 | The captions are now part of the video. |  |
+| 28 | outro | That's the whole process: import, add captions, check the timing, reposition, and export. | 完整流程：导入、加字幕、检查时间、调整位置、导出。 |
+| 29 | outro | Thanks for watching. | 感谢观看。 |

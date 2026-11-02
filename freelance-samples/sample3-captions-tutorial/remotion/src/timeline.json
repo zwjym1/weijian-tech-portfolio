@@ -1,0 +1,746 @@
+{
+ "fps": 30,
+ "duration": 157.038,
+ "cues": [
+  {
+   "n": 0,
+   "line": 0,
+   "sent": 0,
+   "scene": "intro",
+   "text": "Captions make a video easier to follow, even with the sound off.",
+   "zh": "字幕让视频即使静音也容易看懂。",
+   "line_text": "Captions make a video easier to follow, even with the sound off.",
+   "file": "s000.wav",
+   "dur": 3.84,
+   "start": 1.2,
+   "end": 5.04
+  },
+  {
+   "n": 1,
+   "line": 1,
+   "sent": 0,
+   "scene": "intro",
+   "text": "In this tutorial, I'll add captions to a short clip using Shotcut, a free and open-source video editor.",
+   "zh": "本教程用免费开源剪辑软件 Shotcut 给一段短视频加字幕。",
+   "line_text": "In this tutorial, I'll add captions to a short clip using Shotcut, a free and open-source video editor.",
+   "file": "s001.wav",
+   "dur": 6.912,
+   "start": 5.74,
+   "end": 12.652
+  },
+  {
+   "n": 2,
+   "line": 2,
+   "sent": 0,
+   "scene": "intro",
+   "text": "We'll import the clip, add captions, check the timing, move them into place, and export.",
+   "zh": "步骤：导入、加字幕、检查时间、调整位置、导出。",
+   "line_text": "We'll import the clip, add captions, check the timing, move them into place, and export.",
+   "file": "s002.wav",
+   "dur": 5.269,
+   "start": 13.352,
+   "end": 18.621
+  },
+  {
+   "n": 3,
+   "line": 3,
+   "sent": 0,
+   "scene": "s01",
+   "text": "Click Open File, choose your video, and press Enter.",
+   "zh": "点击 Open File，选择视频并回车，片段会在播放器中打开。",
+   "line_text": "Click Open File, choose your video, and press Enter. The clip opens in the player.",
+   "file": "s003.wav",
+   "dur": 2.987,
+   "start": 19.871,
+   "end": 22.858
+  },
+  {
+   "n": 4,
+   "line": 3,
+   "sent": 1,
+   "scene": "s01",
+   "text": "The clip opens in the player.",
+   "zh": "",
+   "line_text": "Click Open File, choose your video, and press Enter. The clip opens in the player.",
+   "file": "s004.wav",
+   "dur": 1.728,
+   "start": 23.208,
+   "end": 24.936
+  },
+  {
+   "n": 5,
+   "line": 4,
+   "sent": 0,
+   "scene": "s02",
+   "text": "Click the plus button in the timeline to add the clip to your project.",
+   "zh": "点击时间线上的加号，把片段加入项目。",
+   "line_text": "Click the plus button in the timeline to add the clip to your project.",
+   "file": "s005.wav",
+   "dur": 3.883,
+   "start": 28.954,
+   "end": 32.837
+  },
+  {
+   "n": 6,
+   "line": 5,
+   "sent": 0,
+   "scene": "s03",
+   "text": "Next, click Subtitles in the toolbar to open the Subtitles panel.",
+   "zh": "然后点击工具栏的 Subtitles，打开字幕面板。",
+   "line_text": "Next, click Subtitles in the toolbar to open the Subtitles panel.",
+   "file": "s006.wav",
+   "dur": 4.267,
+   "start": 33.637,
+   "end": 37.904
+  },
+  {
+   "n": 7,
+   "line": 6,
+   "sent": 0,
+   "scene": "s04",
+   "text": "Click the plus button at the top to create a new subtitle track.",
+   "zh": "点击顶部加号新建字幕轨，命名、语言选英语，点 OK。",
+   "line_text": "Click the plus button at the top to create a new subtitle track. Name it, set the language to English, and click OK.",
+   "file": "s007.wav",
+   "dur": 3.968,
+   "start": 38.704,
+   "end": 42.672
+  },
+  {
+   "n": 8,
+   "line": 6,
+   "sent": 1,
+   "scene": "s04",
+   "text": "Name it, set the language to English, and click OK.",
+   "zh": "",
+   "line_text": "Click the plus button at the top to create a new subtitle track. Name it, set the language to English, and click OK.",
+   "file": "s008.wav",
+   "dur": 3.093,
+   "start": 43.022,
+   "end": 46.115
+  },
+  {
+   "n": 9,
+   "line": 7,
+   "sent": 0,
+   "scene": "s05",
+   "text": "Now move the playhead to where the first line starts.",
+   "zh": "把播放头移到第一句开始处，点击添加，在 Current 框输入字幕。",
+   "line_text": "Now move the playhead to where the first line starts. Click Add, and type the caption into the Current box.",
+   "file": "s009.wav",
+   "dur": 2.731,
+   "start": 47.56,
+   "end": 50.291
+  },
+  {
+   "n": 10,
+   "line": 7,
+   "sent": 1,
+   "scene": "s05",
+   "text": "Click Add, and type the caption into the Current box.",
+   "zh": "",
+   "line_text": "Now move the playhead to where the first line starts. Click Add, and type the caption into the Current box.",
+   "file": "s010.wav",
+   "dur": 2.923,
+   "start": 50.641,
+   "end": 53.564
+  },
+  {
+   "n": 11,
+   "line": 8,
+   "sent": 0,
+   "scene": "s06",
+   "text": "To end the caption, move the playhead to the end of the line, and click Set End.",
+   "zh": "把播放头移到这句结尾，点击 Set End 设置结束点。",
+   "line_text": "To end the caption, move the playhead to the end of the line, and click Set End.",
+   "file": "s011.wav",
+   "dur": 4.373,
+   "start": 55.327,
+   "end": 59.7
+  },
+  {
+   "n": 12,
+   "line": 9,
+   "sent": 0,
+   "scene": "s07",
+   "text": "Repeat the same steps for the next two lines.",
+   "zh": "后两句重复同样的步骤。",
+   "line_text": "Repeat the same steps for the next two lines.",
+   "file": "s012.wav",
+   "dur": 2.496,
+   "start": 60.614,
+   "end": 63.11
+  },
+  {
+   "n": 13,
+   "line": 10,
+   "sent": 0,
+   "scene": "s08",
+   "text": "To show the captions on the video, click the Burn In button.",
+   "zh": "点击 Burn In 按钮，会在输出上添加字幕烧录滤镜，字幕就显示在画面上。",
+   "line_text": "To show the captions on the video, click the Burn In button. It adds a Subtitle Burn In filter to the output.",
+   "file": "s013.wav",
+   "dur": 3.392,
+   "start": 71.457,
+   "end": 74.849
+  },
+  {
+   "n": 14,
+   "line": 10,
+   "sent": 1,
+   "scene": "s08",
+   "text": "It adds a Subtitle Burn In filter to the output.",
+   "zh": "",
+   "line_text": "To show the captions on the video, click the Burn In button. It adds a Subtitle Burn In filter to the output.",
+   "file": "s014.wav",
+   "dur": 3.136,
+   "start": 75.199,
+   "end": 78.335
+  },
+  {
+   "n": 15,
+   "line": 11,
+   "sent": 0,
+   "scene": "s09",
+   "text": "Play it back from the start, and check that each caption matches what you hear.",
+   "zh": "从头播放，检查每条字幕是否和声音对应。",
+   "line_text": "Play it back from the start, and check that each caption matches what you hear.",
+   "file": "s015.wav",
+   "dur": 4.224,
+   "start": 79.135,
+   "end": 83.359
+  },
+  {
+   "n": 16,
+   "line": 12,
+   "sent": 0,
+   "scene": "s10",
+   "text": "If a caption needs to start earlier, move the playhead, select the caption, and click Set Start.",
+   "zh": "如果字幕需要提前开始，先移动播放头，再选中字幕，点击 Set Start。",
+   "line_text": "If a caption needs to start earlier, move the playhead, select the caption, and click Set Start.",
+   "file": "s016.wav",
+   "dur": 5.653,
+   "start": 88.965,
+   "end": 94.618
+  },
+  {
+   "n": 17,
+   "line": 13,
+   "sent": 0,
+   "scene": "s11",
+   "text": "Now let's reposition the captions.",
+   "zh": "接下来调整字幕位置。在滤镜面板里，字幕烧录滤镜控制位置和样式。",
+   "line_text": "Now let's reposition the captions. In the Filters panel, the Subtitle Burn In filter controls position and style.",
+   "file": "s017.wav",
+   "dur": 1.941,
+   "start": 95.368,
+   "end": 97.309
+  },
+  {
+   "n": 18,
+   "line": 13,
+   "sent": 1,
+   "scene": "s11",
+   "text": "In the Filters panel, the Subtitle Burn In filter controls position and style.",
+   "zh": "",
+   "line_text": "Now let's reposition the captions. In the Filters panel, the Subtitle Burn In filter controls position and style.",
+   "file": "s018.wav",
+   "dur": 4.949,
+   "start": 97.659,
+   "end": 102.608
+  },
+  {
+   "n": 19,
+   "line": 14,
+   "sent": 0,
+   "scene": "s12",
+   "text": "I move them up a little by changing the vertical position.",
+   "zh": "修改垂直位置把字幕上移一点，再加粗描边，让文字更清晰。",
+   "line_text": "I move them up a little by changing the vertical position. Then I make the outline thicker, so the text stays readable.",
+   "file": "s019.wav",
+   "dur": 3.328,
+   "start": 103.408,
+   "end": 106.736
+  },
+  {
+   "n": 20,
+   "line": 14,
+   "sent": 1,
+   "scene": "s12",
+   "text": "Then I make the outline thicker, so the text stays readable.",
+   "zh": "",
+   "line_text": "I move them up a little by changing the vertical position. Then I make the outline thicker, so the text stays readable.",
+   "file": "s020.wav",
+   "dur": 3.371,
+   "start": 107.086,
+   "end": 110.457
+  },
+  {
+   "n": 21,
+   "line": 15,
+   "sent": 0,
+   "scene": "s13",
+   "text": "When it looks right, click Export.",
+   "zh": "满意后点击 Export，保持 Default 预设（H.264 MP4），点击导出。",
+   "line_text": "When it looks right, click Export. Keep the Default preset, which makes an H.264 MP4 file, and click Export Video and Audio.",
+   "file": "s021.wav",
+   "dur": 1.877,
+   "start": 111.257,
+   "end": 113.134
+  },
+  {
+   "n": 22,
+   "line": 15,
+   "sent": 1,
+   "scene": "s13",
+   "text": "Keep the Default preset, which makes an H.264 MP4 file, and click Export Video and Audio.",
+   "zh": "",
+   "line_text": "When it looks right, click Export. Keep the Default preset, which makes an H.264 MP4 file, and click Export Video and Audio.",
+   "file": "s022.wav",
+   "dur": 7.744,
+   "start": 113.484,
+   "end": 121.228
+  },
+  {
+   "n": 23,
+   "line": 16,
+   "sent": 0,
+   "scene": "s14",
+   "text": "Type a file name and press Enter.",
+   "zh": "输入文件名并回车，Shotcut 在任务面板中渲染。",
+   "line_text": "Type a file name and press Enter. Shotcut renders the video in the Jobs panel.",
+   "file": "s023.wav",
+   "dur": 1.941,
+   "start": 122.029,
+   "end": 123.97
+  },
+  {
+   "n": 24,
+   "line": 16,
+   "sent": 1,
+   "scene": "s14",
+   "text": "Shotcut renders the video in the Jobs panel.",
+   "zh": "",
+   "line_text": "Type a file name and press Enter. Shotcut renders the video in the Jobs panel.",
+   "file": "s024.wav",
+   "dur": 2.624,
+   "start": 124.32,
+   "end": 126.944
+  },
+  {
+   "n": 25,
+   "line": 17,
+   "sent": 0,
+   "scene": "s15",
+   "text": "When the job is done, open the new file to check the result.",
+   "zh": "任务完成后打开新文件检查，字幕已经烧进视频里了。",
+   "line_text": "When the job is done, open the new file to check the result. The captions are now part of the video.",
+   "file": "s025.wav",
+   "dur": 3.541,
+   "start": 130.624,
+   "end": 134.165
+  },
+  {
+   "n": 26,
+   "line": 17,
+   "sent": 1,
+   "scene": "s15",
+   "text": "The captions are now part of the video.",
+   "zh": "",
+   "line_text": "When the job is done, open the new file to check the result. The captions are now part of the video.",
+   "file": "s026.wav",
+   "dur": 2.176,
+   "start": 134.515,
+   "end": 136.691
+  },
+  {
+   "n": 27,
+   "line": 18,
+   "sent": 0,
+   "scene": "outro",
+   "text": "That's the whole process: import, add captions, check the timing, reposition, and export.",
+   "zh": "完整流程：导入、加字幕、检查时间、调整位置、导出。",
+   "line_text": "That's the whole process: import, add captions, check the timing, reposition, and export.",
+   "file": "s027.wav",
+   "dur": 5.781,
+   "start": 145.256,
+   "end": 151.037
+  },
+  {
+   "n": 28,
+   "line": 19,
+   "sent": 0,
+   "scene": "outro",
+   "text": "Thanks for watching.",
+   "zh": "感谢观看。",
+   "line_text": "Thanks for watching.",
+   "file": "s028.wav",
+   "dur": 1.301,
+   "start": 151.737,
+   "end": 153.038
+  }
+ ],
+ "segs": [
+  {
+   "id": "s01",
+   "label": "Import the clip",
+   "chap": 1,
+   "start": 19.521,
+   "dur": 9.083,
+   "recStart": 2.022,
+   "rate": 1.0,
+   "clicks": [
+    {
+     "t": 21.209,
+     "x": 37,
+     "y": 79
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "label": "Add it to the timeline",
+   "chap": 1,
+   "start": 28.604,
+   "dur": 4.683,
+   "recStart": 34.56,
+   "rate": 1.0,
+   "clicks": [
+    {
+     "t": 30.277,
+     "x": 216,
+     "y": 874
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "label": "Open Subtitles",
+   "chap": 2,
+   "start": 33.287,
+   "dur": 5.067,
+   "recStart": 39.265,
+   "rate": 1.0,
+   "clicks": [
+    {
+     "t": 34.97,
+     "x": 1082,
+     "y": 79
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "label": "Create a caption track",
+   "chap": 2,
+   "start": 38.354,
+   "dur": 8.857,
+   "recStart": 48.402,
+   "rate": 1.0,
+   "clicks": [
+    {
+     "t": 40.032,
+     "x": 441,
+     "y": 150
+    },
+    {
+     "t": 43.402,
+     "x": 984,
+     "y": 540
+    },
+    {
+     "t": 45.907,
+     "x": 975,
+     "y": 570
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "label": "Add the first caption",
+   "chap": 2,
+   "start": 47.21,
+   "dur": 7.767,
+   "recStart": 62.043,
+   "rate": 1.0,
+   "clicks": [
+    {
+     "t": 48.894,
+     "x": 581,
+     "y": 784
+    },
+    {
+     "t": 51.421,
+     "x": 96,
+     "y": 671
+    },
+    {
+     "t": 53.023,
+     "x": 262,
+     "y": 750
+    }
+   ]
+  },
+  {
+   "id": "s06",
+   "label": "Set the end",
+   "chap": 2,
+   "start": 54.977,
+   "dur": 5.287,
+   "recStart": 70.015,
+   "rate": 1.0,
+   "clicks": [
+    {
+     "t": 56.672,
+     "x": 581,
+     "y": 784
+    },
+    {
+     "t": 59.161,
+     "x": 199,
+     "y": 671
+    }
+   ]
+  },
+  {
+   "id": "s07",
+   "label": "Repeat for each line",
+   "chap": 2,
+   "start": 60.264,
+   "dur": 10.843,
+   "recStart": 79.341,
+   "rate": 2.0,
+   "clicks": [
+    {
+     "t": 61.104,
+     "x": 581,
+     "y": 784
+    },
+    {
+     "t": 62.347,
+     "x": 96,
+     "y": 671
+    },
+    {
+     "t": 63.037,
+     "x": 262,
+     "y": 750
+    },
+    {
+     "t": 64.073,
+     "x": 581,
+     "y": 784
+    },
+    {
+     "t": 65.319,
+     "x": 199,
+     "y": 671
+    },
+    {
+     "t": 66.113,
+     "x": 581,
+     "y": 784
+    },
+    {
+     "t": 67.368,
+     "x": 96,
+     "y": 671
+    },
+    {
+     "t": 68.061,
+     "x": 262,
+     "y": 750
+    },
+    {
+     "t": 69.408,
+     "x": 581,
+     "y": 784
+    },
+    {
+     "t": 70.655,
+     "x": 199,
+     "y": 671
+    }
+   ]
+  },
+  {
+   "id": "s08",
+   "label": "Burn in on output",
+   "chap": 2,
+   "start": 71.107,
+   "dur": 7.678,
+   "recStart": 101.239,
+   "rate": 1.0,
+   "clicks": [
+    {
+     "t": 72.783,
+     "x": 270,
+     "y": 671
+    }
+   ]
+  },
+  {
+   "id": "s09",
+   "label": "Check the timing",
+   "chap": 3,
+   "start": 78.785,
+   "dur": 9.83,
+   "recStart": 126.695,
+   "rate": 1.0,
+   "clicks": [
+    {
+     "t": 80.464,
+     "x": 170,
+     "y": 907
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "label": "Fix a start time",
+   "chap": 3,
+   "start": 88.615,
+   "dur": 6.403,
+   "recStart": 185.029,
+   "rate": 1.0,
+   "clicks": [
+    {
+     "t": 90.296,
+     "x": 305,
+     "y": 907
+    },
+    {
+     "t": 91.913,
+     "x": 112,
+     "y": 219
+    },
+    {
+     "t": 93.503,
+     "x": 165,
+     "y": 671
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "label": "Open the burn-in filter",
+   "chap": 4,
+   "start": 95.018,
+   "dur": 8.04,
+   "recStart": 223.865,
+   "rate": 1.0,
+   "clicks": [
+    {
+     "t": 96.692,
+     "x": 84,
+     "y": 817
+    },
+    {
+     "t": 98.271,
+     "x": 40,
+     "y": 915
+    },
+    {
+     "t": 100.05,
+     "x": 75,
+     "y": 197
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "label": "Reposition + restyle",
+   "chap": 4,
+   "start": 103.058,
+   "dur": 7.849,
+   "recStart": 238.185,
+   "rate": 1.0,
+   "clicks": [
+    {
+     "t": 104.742,
+     "x": 250,
+     "y": 566
+    },
+    {
+     "t": 107.981,
+     "x": 246,
+     "y": 482
+    }
+   ]
+  },
+  {
+   "id": "s13",
+   "label": "Export",
+   "chap": 5,
+   "start": 110.907,
+   "dur": 10.771,
+   "recStart": 251.41,
+   "rate": 1.0,
+   "clicks": [
+    {
+     "t": 112.588,
+     "x": 984,
+     "y": 79
+    },
+    {
+     "t": 114.565,
+     "x": 66,
+     "y": 231
+    },
+    {
+     "t": 116.345,
+     "x": 283,
+     "y": 791
+    }
+   ]
+  },
+  {
+   "id": "s14",
+   "label": "Render",
+   "chap": 5,
+   "start": 121.679,
+   "dur": 8.595,
+   "recStart": 262.39,
+   "rate": 2.0,
+   "clicks": []
+  },
+  {
+   "id": "s15",
+   "label": "Check the result",
+   "chap": 5,
+   "start": 130.274,
+   "dur": 14.382,
+   "recStart": 285.591,
+   "rate": 1.0,
+   "clicks": [
+    {
+     "t": 131.952,
+     "x": 37,
+     "y": 79
+    },
+    {
+     "t": 136.71,
+     "x": 964,
+     "y": 782
+    },
+    {
+     "t": 144.042,
+     "x": 964,
+     "y": 782
+    }
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "id": "intro",
+   "start": 0,
+   "end": 19.521
+  },
+  {
+   "id": "outro",
+   "start": 144.656,
+   "end": 157.038
+  }
+ ]
+}

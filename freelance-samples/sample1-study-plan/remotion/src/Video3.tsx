@@ -105,7 +105,7 @@ const Hook = () => <Scene id="hook">{fr => { const l2 = L(2), l3 = L(3);
     <Slam fr={fr} at={S(3,0)} text="It's not you." size={90} color={K.sub} y={150} weight={800}/>
     {fr >= S(3, 1) - 1 && <div style={{position:'absolute', left:960 - 380, top: 330 + (1 - block) * -700, width:760, height:380, borderRadius:28, background:K.smash, display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', boxShadow:'0 40px 80px rgba(0,0,0,0.5)', transform:`scale(${1 + Math.sin(fr / 4) * 0.004})`}}>
       <div style={{fontSize:30, fontWeight:900, letterSpacing:6, color:K.bg, opacity:0.75}}>THE BIG TASK</div>
-      <div style={{fontSize:96, fontWeight:900, color:'#fff', letterSpacing:-3}}>WRITE THE ESSAY</div>
+      <div style={{fontSize:80, fontWeight:900, color:'#fff', letterSpacing:-2, whiteSpace:'nowrap', textAlign:'center'}}>WRITE THE ESSAY</div>
       <div style={{marginTop:14, padding:'8px 20px', borderRadius:12, background:K.bg, color:K.slot, fontSize:32, fontWeight:900, opacity:io(fr, S(3,1) + 18, S(3,1) + 26), transform:`rotate(-3deg) scale(${lemo.back(lemo.seg(fr, S(3,1) + 18, S(3,1) + 28))})`}}>TOO BIG TO START</div></div>}
   </>; }}</Scene>;
 
@@ -145,7 +145,7 @@ const Smash = () => <Scene id="smash">{fr => { const l8 = L(8), boom = S(9, 1) +
     <Chip fr={fr} at={L(7) + 50} n={1} label="SMASH IT" color={K.smash}/>
     {/* big block, then explode */}
     {!broke && fr >= l8 - 1 && <div style={{position:'absolute', left:960 - 380 + wob, top:330 + (1 - blockK) * -600, width:760, height:380, borderRadius:28, background:K.smash, display:'grid', placeItems:'center', boxShadow:'0 40px 80px rgba(0,0,0,0.5)'}}>
-      <div style={{fontSize:96, fontWeight:900, color:'#fff', letterSpacing:-3}}>WRITE THE ESSAY</div>
+      <div style={{fontSize:80, fontWeight:900, color:'#fff', letterSpacing:-2, whiteSpace:'nowrap', textAlign:'center'}}>WRITE THE ESSAY</div>
       {fr > S(9,0) && <svg style={{position:'absolute', inset:0}} width="760" height="380"><path d="M380 0 L350 120 L420 190 L360 280 L400 380 M350 120 L250 150 M420 190 L540 170" stroke={K.bg} strokeWidth="8" fill="none" strokeDasharray="900" strokeDashoffset={900 * (1 - io(fr, S(9,0) + 10, boom))}/></svg>}
     </div>}
     <Burst x={960} y={520} at={boom} colors={[K.smash, '#fff', K.slot]} n={40} r={520} seed={5}/>
@@ -332,11 +332,11 @@ const Shaker: React.FC<{children: React.ReactNode}> = ({children}) => { const fr
 const curScene = (fr: number) => { let k = 0; SC.forEach((id, i) => { if (fr >= scStart(id)) k = i; }); return SC[k]; };
 const Bg = () => { const fr = useCurrentFrame(); return <AbsoluteFill style={{background:K.bg}}><DarkBg tint={TINT[curScene(fr)]}/></AbsoluteFill>; };
 
-export const StudyPlanV3 = () => <AbsoluteFill style={{fontFamily:FONT, background:K.bg}}>
+export const StudyPlanV3 = ({noCaptions = false}: {noCaptions?: boolean}) => <AbsoluteFill style={{fontFamily:FONT, background:K.bg}}>
   <Bg/>
   <Shaker><Hook/><Promise_/><Smash/><Slot/><Check/><Recap/></Shaker>
   {SC.slice(1).map(id => <LightLeak key={id} at={scStart(id) - 9} dur={18} tint={TINT[id]}/>)}
-  <Progress/><Captions/>
+  <Progress/>{!noCaptions && <Captions/>}
   <Audio src={staticFile('mix.wav')}/>
 </AbsoluteFill>;
 

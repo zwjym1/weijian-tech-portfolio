@@ -1,0 +1,115 @@
+1
+00:00:01,200 --> 00:00:05,340
+Captions make a video easier to follow, even with the sound off.
+
+2
+00:00:05,740 --> 00:00:12,952
+In this tutorial, I'll add captions to a short clip using Shotcut, a free and open-source video editor.
+
+3
+00:00:13,352 --> 00:00:18,921
+We'll import the clip, add captions, check the timing, move them into place, and export.
+
+4
+00:00:19,871 --> 00:00:23,158
+Click Open File, choose your video, and press Enter.
+
+5
+00:00:23,208 --> 00:00:25,236
+The clip opens in the player.
+
+6
+00:00:28,954 --> 00:00:33,137
+Click the plus button in the timeline to add the clip to your project.
+
+7
+00:00:33,637 --> 00:00:38,204
+Next, click Subtitles in the toolbar to open the Subtitles panel.
+
+8
+00:00:38,704 --> 00:00:42,972
+Click the plus button at the top to create a new subtitle track.
+
+9
+00:00:43,022 --> 00:00:46,415
+Name it, set the language to English, and click OK.
+
+10
+00:00:47,560 --> 00:00:50,591
+Now move the playhead to where the first line starts.
+
+11
+00:00:50,641 --> 00:00:53,864
+Click Add, and type the caption into the Current box.
+
+12
+00:00:55,327 --> 00:01:00,000
+To end the caption, move the playhead to the end of the line, and click Set End.
+
+13
+00:01:00,614 --> 00:01:03,410
+Repeat the same steps for the next two lines.
+
+14
+00:01:11,457 --> 00:01:15,149
+To show the captions on the video, click the Burn In button.
+
+15
+00:01:15,199 --> 00:01:18,635
+It adds a Subtitle Burn In filter to the output.
+
+16
+00:01:19,135 --> 00:01:23,659
+Play it back from the start, and check that each caption matches what you hear.
+
+17
+00:01:28,965 --> 00:01:34,918
+If a caption needs to start earlier, move the playhead, select the caption, and click Set Start.
+
+18
+00:01:35,368 --> 00:01:37,609
+Now let's reposition the captions.
+
+19
+00:01:37,659 --> 00:01:42,908
+In the Filters panel, the Subtitle Burn In filter controls position and style.
+
+20
+00:01:43,408 --> 00:01:47,036
+I move them up a little by changing the vertical position.
+
+21
+00:01:47,086 --> 00:01:50,757
+Then I make the outline thicker, so the text stays readable.
+
+22
+00:01:51,257 --> 00:01:53,434
+When it looks right, click Export.
+
+23
+00:01:53,484 --> 00:02:01,528
+Keep the Default preset, which makes an H.264 MP4 file, and click Export Video and Audio.
+
+24
+00:02:02,029 --> 00:02:04,270
+Type a file name and press Enter.
+
+25
+00:02:04,320 --> 00:02:07,244
+Shotcut renders the video in the Jobs panel.
+
+26
+00:02:10,624 --> 00:02:14,465
+When the job is done, open the new file to check the result.
+
+27
+00:02:14,515 --> 00:02:16,991
+The captions are now part of the video.
+
+28
+00:02:25,256 --> 00:02:31,337
+That's the whole process: import, add captions, check the timing, reposition, and export.
+
+29
+00:02:31,737 --> 00:02:33,338
+Thanks for watching.
